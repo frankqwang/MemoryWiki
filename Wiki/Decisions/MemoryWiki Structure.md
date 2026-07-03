@@ -26,7 +26,7 @@ related:
 - `Notes/`：保存用户自己手动维护的个人笔记、草稿、观察和待整理材料。
 - `Wiki/`：保存加工后的知识，包括概念、项目、论文主题和决策。
 
-根目录只保留 `README.md`、`README.en.md`、`AGENTS.md`、`Home.md`、配置、内容目录和维护入口。可复用的 AI 维护流程与模板放在 `_skills/`，不作为普通 wiki 内容页。
+根目录只保留 `README.md`、`AGENTS.md`、`Home.md`、配置、内容目录和维护入口。可复用的 AI 维护流程与模板放在 `_skills/`，不作为普通 wiki 内容页。
 
 ## 理由
 
@@ -36,6 +36,7 @@ related:
 - `Wiki/Skills/` 对当前目标价值不高；skill 本身应作为工具说明放在 `_skills/`，需要沉淀的原则再进入 `Wiki/Concepts/` 或 `Wiki/Decisions/`。
 - `_templates/` 属于维护流程的配套资产，不是用户真正阅读的项目内容，因此移入 `_skills/memory-wiki/templates/`。
 - 中文用户阅读时，少用 MOC、Index 这类术语更直接。
+- `README.en.md` 和 `SKILL.zh.md` 这类平行英文/中文副本会增加同步成本；当前采用中文单文档，`SKILL.md` 保留固定文件名以兼容 Codex skill 发现机制。
 
 ## 影响
 

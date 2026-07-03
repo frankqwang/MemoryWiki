@@ -1,7 +1,5 @@
 # MemoryWiki
 
-[English](README.en.md)
-
 MemoryWiki 是一个可移植、兼容 Obsidian 的个人记忆 wiki，用来保存 AI 对话摘要、任务记录、手动笔记，以及进一步加工后的概念、决策、论文笔记和项目上下文。
 
 它放在 `Documents` 下，而不是某个工具的私有配置目录里，这样 Codex、其他 AI 助手、Obsidian、编辑器和 Git 都能读写同一套资料。
@@ -35,7 +33,6 @@ MemoryWiki/
   Wiki/        加工知识：概念、项目、决策、论文等整理后的内容
   Home.md      首页和导航
   README.md    中文说明
-  README.en.md 英文说明
   AGENTS.md    给 AI 助手看的维护规则
   _skills/     AI 维护流程和 Codex skill 副本，不作为普通笔记区
 ```
@@ -71,7 +68,7 @@ Wiki/
 请帮我在 Documents 下建立一个 MemoryWiki 目录，作为 Obsidian-compatible 的个人记忆 wiki。
 
 要求：
-- 根目录只保留 README.md、README.en.md、AGENTS.md、Home.md、.gitignore 等项目级说明和入口。
+- 根目录只保留 README.md、AGENTS.md、Home.md、.gitignore 等项目级说明和入口。
 - 建立 Memory/Summaries/，用来保存原始对话摘要和任务摘要。
 - 建立 Notes/，用来保存用户手动更新的个人笔记。
 - 建立 Wiki/Concepts/、Wiki/Projects/、Wiki/Decisions/，用来保存加工后的知识。
