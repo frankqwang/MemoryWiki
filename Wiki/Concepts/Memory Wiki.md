@@ -24,6 +24,10 @@ Memory Wiki 是一种个人长期记忆库：用普通 Markdown、YAML frontmatt
 - 让笔记之间互相链接，而不是孤立存档。
 - 定期把重复出现的 history summary 蒸馏成概念笔记和决策笔记。
 
+## 展示层
+
+核心资料仍应保持为普通 Markdown + Git。Obsidian 可以作为编辑器使用；如果需要网页展示、搜索、反向链接和图谱，可以用 Quartz 生成静态网站。对于更正式、层级稳定的文档站，再考虑 MkDocs Material。
+
 ## 相关
 
 - [_skills/memory-wiki/SKILL.md](_skills/memory-wiki/SKILL.md)
