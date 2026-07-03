@@ -1,0 +1,9 @@
+# Obsidian local workspace state
+.obsidian/workspace*
+.obsidian/cache/
+
+# OS/editor noise
+Thumbs.db
+Desktop.ini
+*.tmp
+*.bak

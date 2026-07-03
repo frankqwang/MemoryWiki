@@ -1,0 +1,86 @@
+---
+name: save-history-summary
+description: Save cross-session conversation or task summaries as Obsidian-compatible Markdown knowledge-base notes in the user-level Documents `HistorySummary` vault instead of the current repository. Use when the user asks to summarize chats, conversation history, task history, lessons learned, decisions, notes for future sessions, Obsidian-style notes, knowledge-base notes, linked notes, backlinks, wikilinks, or a unified place; asks in Chinese for conversation notes or history notes; mentions HistorySummary; or asks not to put the note in the repo.
+---
+
+# Save History Summary
+
+## Overview
+
+Create durable Obsidian-compatible Markdown notes from the current conversation or completed work and store them under the user's Documents folder so they are reusable across repositories, Codex sessions, and other AI tools.
+
+## Destination
+
+Save history summaries under:
+
+- Windows: `%USERPROFILE%\Documents\HistorySummary`
+- POSIX: `$HOME/Documents/HistorySummary`
+
+Create the directory if it does not exist. Do not save these notes inside the current repository unless the user explicitly requests a repo-local artifact.
+
+Treat this directory as an Obsidian vault. Prefer plain Markdown, YAML frontmatter, tags, and `[[WikiLinks]]`; do not require Obsidian-specific plugins.
+
+## Vault Conventions
+
+Maintain these files and conventions:
+
+- `00_Index.md`: top-level map of contents. Create it if missing and update it after adding notes.
+- Notes can live in the vault root unless the user asks for folders.
+- Use stable ASCII filenames; use frontmatter `title` and `aliases` for human-readable names.
+- Use Obsidian wikilinks for related topics and notes, e.g. `[[nanochat]]`, `[[Engram]]`, `[[conversation_notes_2601_07372|Engram paper notes]]`.
+- It is acceptable to create dangling topic links; Obsidian will surface them as future notes.
+
+Use this frontmatter shape for new notes:
+
+```markdown
+---
+title: Human-readable title
+created: YYYY-MM-DD
+type: history-summary
+tags:
+  - codex/history
+  - topic/example
+aliases:
+  - Optional alternate title
+related:
+  - "[[00_Index]]"
+---
+```
+
+## Workflow
+
+1. Infer the note scope from the user's request:
+   - Current conversation if they ask for notes from this chat, our discussion, or this conversation.
+   - Current task if they ask for notes from this issue, this task, or the work just completed.
+   - A named topic if they provide one.
+2. Inspect existing vault notes before writing:
+   - List existing Markdown files in `HistorySummary`.
+   - Reuse exact filenames or titles for wikilinks when linking to existing notes.
+   - Identify 2-6 related existing notes or topic links.
+3. Choose a stable filename:
+   - Use a short slug from the topic plus date when helpful.
+   - Prefer lowercase ASCII for filenames, e.g. `conversation_notes_2601_07372.md`, `history_summary_openai_api_setup_2026-07-03.md`.
+   - Avoid overwriting existing notes; append a suffix such as `_2` if needed.
+4. Write a concise Markdown note with:
+   - YAML frontmatter.
+   - Title.
+   - User goal or original request.
+   - What was done.
+   - Key findings, decisions, and rationale.
+   - Files, commands, URLs, or artifacts created.
+   - A `Related` section containing wikilinks to existing notes and topic links.
+   - Open questions or follow-ups, if any.
+5. Update `00_Index.md`:
+   - Add the new note under a recent notes or relevant topic section.
+   - Keep links as Obsidian wikilinks.
+   - Preserve existing index content.
+6. If an earlier attempt placed the note in a repository and the user asked for the user-level location, move it to `HistorySummary` and remove the repo-local copy.
+7. Report the absolute path to the saved note and mention that the folder can be opened as an Obsidian vault.
+
+## Style
+
+Use clear Markdown with short sections. Preserve useful technical specifics, but do not dump raw logs or unnecessary command output. Match the user's language.
+
+## Repository Hygiene
+
+Do not stage, commit, or modify repository files for history summaries unless explicitly requested. If the repo is already dirty, leave unrelated changes untouched.
