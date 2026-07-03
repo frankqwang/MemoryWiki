@@ -12,9 +12,9 @@ aliases:
   - Conditional Memory via Scalable Lookup 笔记
 related:
   - "[[Home]]"
-  - "[[Notes/Concepts/Engram]]"
-  - "[[Notes/Concepts/Conditional Memory]]"
-  - "[[Notes/Projects/nanochat]]"
+  - "[[Wiki/Concepts/Engram]]"
+  - "[[Wiki/Concepts/Conditional Memory]]"
+  - "[[Wiki/Projects/nanochat]]"
 ---
 
 # 对话笔记：arXiv 2601.07372 与 nanochat 启发
@@ -177,16 +177,16 @@ nanochat 当前模型在 `nanochat/gpt.py` 里已经有一些低 FLOPs、高参�
 
 本对话笔记：
 
-- `C:\Users\Administrator\Documents\MemoryWiki\conversation_notes_2601_07372.md`
+- `C:\Users\Administrator\Documents\MemoryWiki\Memory\Summaries\conversation_notes_2601_07372.md`
 
 ## Related
 
 - [[Home|MemoryWiki 首页]]
-- [[Notes/Concepts/Engram]]
-- [[Notes/Concepts/Conditional Memory]]
-- [[Notes/Projects/nanochat]]
-- [[Notes/Concepts/MoE]]
-- [[Notes/Concepts/Memory Wiki]]
+- [[Wiki/Concepts/Engram]]
+- [[Wiki/Concepts/Conditional Memory]]
+- [[Wiki/Projects/nanochat]]
+- [[Wiki/Concepts/MoE]]
+- [[Wiki/Concepts/Memory Wiki]]
 
 ## 最后结论
 

@@ -7,7 +7,6 @@ tags:
 aliases: []
 related:
   - "[[Home]]"
-  - "[[Indexes/Decisions|决策]]"
 ---
 
 # 决策
@@ -24,4 +23,4 @@ related:
 
 ## 相关
 
-- [[Indexes/Decisions|决策]]
+- [[Home]]

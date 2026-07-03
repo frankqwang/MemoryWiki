@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-MemoryWiki 是一个可移植、兼容 Obsidian 的个人记忆 wiki，用来保存 AI 对话笔记、任务总结、决策、概念、论文笔记、技能和可复用的项目上下文。
+MemoryWiki 是一个可移植、兼容 Obsidian 的个人记忆 wiki，用来保存 AI 对话摘要、任务记录，以及进一步加工后的概念、决策、论文笔记、技能和项目上下文。
 
 它放在 `Documents` 下，而不是某个工具的私有配置目录里，这样 Codex、其他 AI 助手、Obsidian、编辑器和 Git 都能读写同一套资料。
 
@@ -18,6 +18,42 @@ C:\Users\Administrator\Documents\MemoryWiki
 
 - [[Home]]
 
+## 核心结构
+
+这个库只有两个主要内容目录：
+
+```text
+MemoryWiki/
+  Memory/      原始记忆：对话摘要、任务记录、未经深度整理的历史
+  Wiki/        加工知识：概念、项目、技能、决策、论文等整理后的内容
+  Home.md      首页和导航
+  README.md    中文说明
+  README.en.md 英文说明
+  AGENTS.md    给 AI 助手看的维护规则
+  _templates/  新笔记模板
+  _skills/     Codex skill 副本
+```
+
+当前约定：
+
+```text
+Memory/
+  Summaries/   原始对话摘要和任务摘要
+
+Wiki/
+  Concepts/    概念、方法、术语、论文主题
+  Projects/    项目上下文
+  Skills/      AI 工作流和 skill 说明
+  Decisions/   重要决策
+```
+
+## Memory 和 Wiki 的区别
+
+- `Memory/`：先记下来，保留上下文。适合放“这次对话讲了什么”“这次任务做了什么”。
+- `Wiki/`：整理后的知识。适合放“稳定结论是什么”“以后应该怎么做”“这个概念是什么”。
+
+也就是说，`Memory/` 是原材料，`Wiki/` 是加工后的资料。
+
 ## 用 Codex 快速搭建
 
 别人想复刻这个流程时，可以让 Codex 在自己的 `Documents` 下创建同样结构。可直接复制这段给 Codex：
@@ -27,60 +63,22 @@ C:\Users\Administrator\Documents\MemoryWiki
 
 要求：
 - 根目录只保留 README.md、README.en.md、AGENTS.md、Home.md、.gitignore 等项目级说明和入口。
-- 具体笔记放到 Notes/ 下，按 Concepts、History、Projects、Skills 分类。
-- 建立 Indexes/ 目录，放 Papers、Projects、Decisions、Skills 等索引页。
+- 建立 Memory/Summaries/，用来保存原始对话摘要和任务摘要。
+- 建立 Wiki/Concepts/、Wiki/Projects/、Wiki/Skills/、Wiki/Decisions/，用来保存加工后的知识。
 - 建立 _templates/ 目录，放 history-summary、concept、decision 模板。
 - 建立 _skills/memory-wiki/SKILL.md，并把同一份 skill 安装到 ~/.codex/skills/memory-wiki。
-- 所有普通笔记默认中文正文，英文术语可以保留在标题、别名和链接里。
+- 普通笔记默认中文正文，英文术语可以保留在标题、别名和链接里。
 - 用 git 初始化仓库，首次提交，并告诉我如何打开 Obsidian vault。
-```
-
-## 目录结构
-
-根目录只保留项目介绍、使用说明、索引和维护入口。具体笔记放在 `Notes/` 下：
-
-```text
-MemoryWiki/
-  README.md       中文项目说明
-  README.en.md    英文项目说明
-  AGENTS.md       给 AI 助手看的维护规则
-  Home.md         Obsidian 入口页
-  Indexes/        主题索引页
-  Notes/          具体笔记
-  _templates/     新笔记模板
-  _skills/        可复用 Codex skill 副本
-```
-
-具体笔记目录：
-
-```text
-Notes/
-  Concepts/   概念、方法、术语
-  History/    对话或任务原始摘要
-  Projects/   项目上下文
-  Skills/     AI 工作流和 skill 说明
 ```
 
 ## 笔记类型
 
-`history-summary` 是原始摄取层：把一次对话或一次任务总结成稳定笔记。随着内容积累，重复或重要的信息应该进一步沉淀成更长期的笔记类型：
-
-- `concept`：概念、方法、术语
-- `decision`：决策和理由
-- `paper`：论文或文章笔记
-- `project`：项目上下文
-- `skill`：可复用的 AI 工作流
-
-## 索引是什么
-
-以前这里用过 MOC 这个词，它是 `Map of Content` 的缩写，意思就是“主题索引页”。为了少一点术语，现在统一叫 `Indexes/`。
-
-索引页不是正文笔记，而是导航。例如：
-
-- `Indexes/Papers.md`：论文相关笔记入口
-- `Indexes/Projects.md`：项目入口
-- `Indexes/Decisions.md`：重要决策入口
-- `Indexes/Skills.md`：AI skill 入口
+- `history-summary`：一次对话或任务的原始摘要，放在 `Memory/Summaries/`。
+- `concept`：概念、方法、术语，放在 `Wiki/Concepts/`。
+- `decision`：决策和理由，放在 `Wiki/Decisions/`。
+- `paper`：论文或文章笔记，可放在 `Wiki/Concepts/` 或之后单独扩展。
+- `project`：项目上下文，放在 `Wiki/Projects/`。
+- `skill`：可复用的 AI 工作流，放在 `Wiki/Skills/`。
 
 ## 笔记格式
 
@@ -95,7 +93,6 @@ created: YYYY-MM-DD
 type: history-summary
 tags:
   - codex/history
-  - topic/example
 aliases:
   - 可选别名
 related:
@@ -103,29 +100,14 @@ related:
 ---
 ```
 
-推荐章节：
-
-- 用户目标或原始请求
-- 做了什么
-- 关键发现、决策和理由
-- 创建或使用过的文件、命令、URL、产物
-- 相关笔记，使用 `[[WikiLinks]]`
-- 未解决问题或后续事项
-
 ## 链接规则
 
 - 用 `[[WikiLinks]]` 连接相关笔记和主题。
-- 新增重要笔记时更新 [[Home]] 和相关 index。
+- 新增重要笔记时更新 [[Home]]。
 - 可以创建暂时不存在的主题链接；之后可以补成概念页。
 - 文件名尽量稳定、ASCII 友好；可读标题放在 frontmatter 的 `title` 和 `aliases` 里。
 
 ## 给 AI 助手的规则
-
-可复用的 Codex skill 放在：
-
-```text
-_skills\memory-wiki\SKILL.md
-```
 
 其他 AI 助手打开这个目录时，应先阅读：
 

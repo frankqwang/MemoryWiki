@@ -14,20 +14,25 @@ C:\Users\Administrator\Documents\MemoryWiki
 
 1. Read `README.md`.
 2. Read `Home.md`.
-3. Inspect `Indexes/` for the right topic index.
-4. Inspect `_templates/` and reuse the closest template.
-5. Search existing notes before creating a duplicate.
+3. Inspect `_templates/` and reuse the closest template.
+4. Search existing notes before creating a duplicate.
 
 ## File Placement
 
-Keep the vault root clean. Put concrete notes under `Notes/`:
+Use two top-level content areas:
 
-- `Notes/History/` for `history-summary` notes.
-- `Notes/Concepts/` for `concept`, `paper`, and durable topic notes.
-- `Notes/Projects/` for `project` notes.
-- `Notes/Skills/` for `skill` notes.
+- `Memory/`: raw captures, summaries, task logs, lightly processed history.
+- `Wiki/`: refined, reusable knowledge.
 
-Root-level files should be limited to project documentation, indexes, configuration, and AI maintenance instructions.
+Current placement:
+
+- `Memory/Summaries/` for `history-summary` notes.
+- `Wiki/Concepts/` for `concept`, `paper`, and durable topic notes.
+- `Wiki/Projects/` for `project` notes.
+- `Wiki/Skills/` for `skill` notes.
+- `Wiki/Decisions/` for `decision` notes.
+
+Root-level files should be limited to project documentation, home page, configuration, and AI maintenance instructions.
 
 ## Language
 
@@ -47,7 +52,7 @@ Use Chinese for ordinary note prose by default. Keep English technical terms in 
 ## Linking
 
 - Use Obsidian `[[WikiLinks]]`.
-- Link every new note to `[[Home]]` and at least one index in `Indexes/`.
+- Link every new note to `[[Home]]`.
 - Prefer linking to existing notes by exact filename/title.
 - Dangling topic links are acceptable when they are useful future nodes.
 
@@ -57,7 +62,7 @@ Commit meaningful batches of changes. Do not commit Obsidian workspace state or 
 
 ## Codex Skill
 
-The note-saving skill lives at:
+The note-maintenance skill lives at:
 
 ```text
 _skills\memory-wiki\SKILL.md

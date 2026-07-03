@@ -9,9 +9,9 @@ tags:
 aliases:
   - DeepSeek Engram
 related:
-  - "[[Notes/Concepts/Conditional Memory]]"
-  - "[[Notes/History/conversation_notes_2601_07372]]"
-  - "[[Indexes/Papers|论文]]"
+  - "[[Wiki/Concepts/Conditional Memory]]"
+  - "[[Memory/Summaries/conversation_notes_2601_07372]]"
+  - "[[Home|论文]]"
 ---
 
 # Engram
@@ -20,12 +20,12 @@ Engram 是 DeepSeek 提出的 conditional memory 模块。它用确定性的 N-g
 
 ## 关键点
 
-- Engram 是 [[Notes/Concepts/MoE|MoE]] 条件计算之外的一条稀疏记忆轴。
+- Engram 是 [[Wiki/Concepts/MoE|MoE]] 条件计算之外的一条稀疏记忆轴。
 - 它包含 tokenizer compression、multi-head hashing、context-aware gating 和选择性层插入。
 - 论文认为 Engram 能把静态局部模式的重构工作从 Transformer 早层卸载出去，让主干网络把更多有效深度用于复杂推理。
 
 ## 相关
 
-- [[Notes/Concepts/Conditional Memory|Conditional Memory]]
-- [[Notes/History/conversation_notes_2601_07372|arXiv 2601.07372 与 nanochat 启发]]
-- [[Notes/Projects/nanochat|nanochat]]
+- [[Wiki/Concepts/Conditional Memory|Conditional Memory]]
+- [[Memory/Summaries/conversation_notes_2601_07372|arXiv 2601.07372 与 nanochat 启发]]
+- [[Wiki/Projects/nanochat|nanochat]]

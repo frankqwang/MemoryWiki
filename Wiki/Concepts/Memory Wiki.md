@@ -10,7 +10,7 @@ aliases:
   - MemoryWiki
 related:
   - "[[Home]]"
-  - "[[Notes/Skills/memory-wiki]]"
+  - "[[Wiki/Skills/memory-wiki]]"
 ---
 
 # Memory Wiki
@@ -26,5 +26,5 @@ Memory Wiki 是一种个人长期记忆库：用普通 Markdown、YAML frontmatt
 
 ## 相关
 
-- [[Notes/Skills/memory-wiki|memory-wiki]]
+- [[Wiki/Skills/memory-wiki|memory-wiki]]
 - [[Home]]

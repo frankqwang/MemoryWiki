@@ -12,36 +12,41 @@ related: []
 
 # MemoryWiki 首页
 
-这是一个给人和 AI 共同维护的长期记忆 wiki。`history-summary` 是原始对话/任务摘要，重要内容应该逐步沉淀成概念、决策、论文、项目和技能笔记。
+这是一个给人和 AI 共同维护的长期记忆 wiki。`Memory/` 保存原始摘要和任务记录，`Wiki/` 保存加工后的概念、项目、技能和决策。
 
 ## 从这里开始
 
 - [[README|项目说明]]
 - [[AGENTS|AI 维护规则]]
 
-## 最近笔记
+## Memory
 
-- [[Notes/History/conversation_notes_2601_07372|arXiv 2601.07372 与 nanochat 启发]]
+- [[Memory/Summaries/conversation_notes_2601_07372|arXiv 2601.07372 与 nanochat 启发]]
 
-## 索引
+## Wiki
 
-- [[Indexes/Papers|论文]]
-- [[Indexes/Projects|项目]]
-- [[Indexes/Decisions|决策]]
-- [[Indexes/Skills|技能]]
+### Concepts
 
-## 主题
+- [[Wiki/Concepts/Conditional Memory|Conditional Memory]]
+- [[Wiki/Concepts/Engram|Engram]]
+- [[Wiki/Concepts/MoE|MoE]]
+- [[Wiki/Concepts/Memory Wiki|Memory Wiki]]
 
-- [[Notes/Concepts/Conditional Memory|Conditional Memory]]
-- [[Notes/Concepts/Engram|Engram]]
-- [[Notes/Concepts/MoE|MoE]]
-- [[Notes/Projects/nanochat|nanochat]]
-- [[Notes/Concepts/Memory Wiki|Memory Wiki]]
-- [[Notes/Skills/memory-wiki|memory-wiki]]
+### Projects
+
+- [[Wiki/Projects/nanochat|nanochat]]
+
+### Skills
+
+- [[Wiki/Skills/memory-wiki|memory-wiki]]
+
+### Decisions
+
+- [[Wiki/Decisions/MemoryWiki Structure|MemoryWiki 结构决策]]
 
 ## 约定
 
 - 新笔记使用 YAML frontmatter。
 - 相关内容用 `[[WikiLinks]]` 互相连接。
-- 具体笔记放在 `Notes/` 下，根目录只放项目说明、首页、AI 规则和配置。
+- 原始记录放在 `Memory/`，加工后的资料放在 `Wiki/`。
 - AI 助手创建或更新笔记前，应阅读 `_skills/memory-wiki/SKILL.md`。

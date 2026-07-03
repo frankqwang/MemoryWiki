@@ -8,8 +8,8 @@ tags:
 aliases:
   - MemoryWiki skill
 related:
-  - "[[Notes/Concepts/Memory Wiki]]"
-  - "[[Indexes/Skills|技能]]"
+  - "[[Wiki/Concepts/Memory Wiki]]"
+  - "[[Home|技能]]"
 ---
 
 # memory-wiki
@@ -25,10 +25,10 @@ related:
 
 - 默认保存到 `C:\Users\Administrator\Documents\MemoryWiki`。
 - 使用 Obsidian-compatible Markdown。
-- 更新 `Home.md` 和相关索引页。
+- 更新 `Home.md`。
 - 除非用户明确要求，不把长期记忆笔记写进项目仓库。
 
 ## 相关
 
-- [[Notes/Concepts/Memory Wiki|Memory Wiki]]
-- [[Indexes/Skills|技能]]
+- [[Wiki/Concepts/Memory Wiki|Memory Wiki]]
+- [[Home|技能]]

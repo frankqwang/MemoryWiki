@@ -25,13 +25,14 @@ Treat this directory as an Obsidian vault. Prefer plain Markdown, YAML frontmatt
 Maintain these files and conventions:
 
 - `Home.md`: top-level map of contents. Create it if missing and update it after adding notes.
-- Keep the vault root clean. Concrete notes belong under `Notes/`.
-- Use `Notes/History/` for `history-summary` notes.
-- Use `Notes/Concepts/` for `concept`, `paper`, and durable topic notes.
-- Use `Notes/Projects/` for `project` notes.
-- Use `Notes/Skills/` for `skill` notes.
+- Keep the vault root clean. Raw captures belong under `Memory/`; refined knowledge belongs under `Wiki/`.
+- Use `Memory/Summaries/` for raw conversation and task summaries.
+- Use `Wiki/Concepts/` for concepts, papers, and durable topic notes.
+- Use `Wiki/Projects/` for project notes.
+- Use `Wiki/Skills/` for skill notes.
+- Use `Wiki/Decisions/` for decision notes.
 - Use stable ASCII filenames; use frontmatter `title` and `aliases` for human-readable names.
-- Use Obsidian wikilinks for related topics and notes, e.g. `[[Notes/Projects/nanochat]]`, `[[Notes/Concepts/Engram]]`, `[[Notes/History/conversation_notes_2601_07372|Engram paper notes]]`.
+- Use Obsidian wikilinks for related topics and notes, e.g. `[[Wiki/Projects/nanochat]]`, `[[Wiki/Concepts/Engram]]`, `[[Memory/Summaries/conversation_notes_2601_07372|Engram paper notes]]`.
 - It is acceptable to create dangling topic links; Obsidian will surface them as future notes.
 
 Use this frontmatter shape for new notes:
@@ -65,7 +66,7 @@ related:
    - Use a short slug from the topic plus date when helpful.
    - Prefer lowercase ASCII for filenames, e.g. `conversation_notes_2601_07372.md`, `history_summary_openai_api_setup_2026-07-03.md`.
    - Avoid overwriting existing notes; append a suffix such as `_2` if needed.
-4. Put the note in the right `Notes/` subdirectory for its `type`.
+4. Put raw summaries under `Memory/` and refined notes under the right `Wiki/` subdirectory.
 5. Write a concise Markdown note with:
    - YAML frontmatter.
    - Title.
