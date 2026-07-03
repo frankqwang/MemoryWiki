@@ -8,7 +8,13 @@ It intentionally lives under `Documents` instead of a single tool's private conf
 
 ## How To Use
 
-Open this folder as an Obsidian vault:
+By default, open this folder as an Obsidian vault:
+
+```text
+~/Documents/MemoryWiki
+```
+
+On this machine, the resolved path is:
 
 ```text
 C:\Users\Administrator\Documents\MemoryWiki

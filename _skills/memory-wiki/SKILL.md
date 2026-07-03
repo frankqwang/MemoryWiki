@@ -11,10 +11,11 @@ Create and maintain durable Obsidian-compatible Markdown notes from conversation
 
 ## Destination
 
-Save MemoryWiki notes under:
+Save MemoryWiki notes to the vault path specified by the user. If the user does not specify a path, use the user's home Documents folder:
 
 - Windows: `%USERPROFILE%\Documents\MemoryWiki`
 - POSIX: `$HOME/Documents/MemoryWiki`
+- Shorthand: `~/Documents/MemoryWiki`
 
 Create the directory if it does not exist. Do not save these notes inside the current repository unless the user explicitly requests a repo-local artifact.
 

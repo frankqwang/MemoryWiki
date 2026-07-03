@@ -8,7 +8,13 @@ MemoryWiki 是一个可移植、兼容 Obsidian 的个人记忆 wiki，用来保
 
 ## 使用方式
 
-把这个文件夹作为 Obsidian vault 打开：
+默认把这个文件夹作为 Obsidian vault 打开：
+
+```text
+~/Documents/MemoryWiki
+```
+
+在当前这台机器上，实际路径是：
 
 ```text
 C:\Users\Administrator\Documents\MemoryWiki

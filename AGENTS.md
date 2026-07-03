@@ -4,11 +4,21 @@ This vault stores durable cross-session knowledge. Any AI assistant working in t
 
 ## Default Location
 
-Write notes in this vault, not in a project repository:
+Write notes to the MemoryWiki vault chosen by the user, not to the current project repository.
+
+Default portable location:
+
+```text
+~/Documents/MemoryWiki
+```
+
+On this machine, that currently resolves to:
 
 ```text
 C:\Users\Administrator\Documents\MemoryWiki
 ```
+
+If the user explicitly provides a different MemoryWiki path, use that path and keep the same structure.
 
 ## Before Writing
 
@@ -45,6 +55,7 @@ Use Chinese for ordinary note prose by default. Keep English technical terms in 
 - `decision`: a durable decision and rationale.
 - `paper`: notes about a paper or article.
 - `project`: reusable context about a project.
+
 `history-summary` notes are the intake layer, not the whole vault. When a pattern repeats or becomes durable, create or update a `concept`, `decision`, `paper`, or `project` note and link the raw summary to it.
 
 ## Linking
