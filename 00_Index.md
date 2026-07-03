@@ -1,27 +1,35 @@
 ---
-title: Codex History Summary Index
+title: MemoryWiki Index
 created: 2026-07-03
 type: index
 tags:
   - codex/history
   - index
 aliases:
-  - History Summary Index
-  - Codex History Vault
+  - MemoryWiki
+  - Codex Memory Wiki
 related: []
 ---
 
-# Codex History Summary Index
+# MemoryWiki Index
 
-This folder is an Obsidian-compatible vault for cross-session Codex notes.
+This folder is an Obsidian-compatible vault for cross-session AI knowledge. `history-summary` notes are raw captures; durable knowledge should be distilled into concept, decision, paper, project, and skill notes.
 
 ## Start Here
 
 - [[README|Vault README]]
+- [[AGENTS|AI Maintenance Guide]]
 
 ## Recent Notes
 
 - [[conversation_notes_2601_07372|arXiv 2601.07372 与 nanochat 启发]]
+
+## Maps of Content
+
+- [[01_MOCs/Papers|Papers]]
+- [[01_MOCs/Projects|Projects]]
+- [[01_MOCs/Decisions|Decisions]]
+- [[01_MOCs/Skills|Skills]]
 
 ## Topics
 
@@ -29,7 +37,7 @@ This folder is an Obsidian-compatible vault for cross-session Codex notes.
 - [[Engram]]
 - [[MoE]]
 - [[nanochat]]
-- [[Obsidian Knowledge Vault]]
+- [[Memory Wiki]]
 - [[save-history-summary]]
 
 ## Conventions

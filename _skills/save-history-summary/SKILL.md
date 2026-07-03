@@ -1,6 +1,6 @@
 ---
 name: save-history-summary
-description: Save cross-session conversation or task summaries as Obsidian-compatible Markdown knowledge-base notes in the user-level Documents `HistorySummary` vault instead of the current repository. Use when the user asks to summarize chats, conversation history, task history, lessons learned, decisions, notes for future sessions, Obsidian-style notes, knowledge-base notes, linked notes, backlinks, wikilinks, or a unified place; asks in Chinese for conversation notes or history notes; mentions HistorySummary; or asks not to put the note in the repo.
+description: Save cross-session conversation or task summaries as Obsidian-compatible Markdown knowledge-base notes in the user-level Documents `MemoryWiki` instead of the current repository. Use when the user asks to summarize chats, conversation history, task history, lessons learned, decisions, notes for future sessions, Obsidian-style notes, knowledge-base notes, linked notes, backlinks, wikilinks, or a unified place; asks in Chinese for conversation notes or history notes; mentions MemoryWiki or HistorySummary; or asks not to put the note in the repo.
 ---
 
 # Save History Summary
@@ -13,8 +13,8 @@ Create durable Obsidian-compatible Markdown notes from the current conversation 
 
 Save history summaries under:
 
-- Windows: `%USERPROFILE%\Documents\HistorySummary`
-- POSIX: `$HOME/Documents/HistorySummary`
+- Windows: `%USERPROFILE%\Documents\MemoryWiki`
+- POSIX: `$HOME/Documents/MemoryWiki`
 
 Create the directory if it does not exist. Do not save these notes inside the current repository unless the user explicitly requests a repo-local artifact.
 
@@ -54,7 +54,7 @@ related:
    - Current task if they ask for notes from this issue, this task, or the work just completed.
    - A named topic if they provide one.
 2. Inspect existing vault notes before writing:
-   - List existing Markdown files in `HistorySummary`.
+   - List existing Markdown files in `MemoryWiki`.
    - Reuse exact filenames or titles for wikilinks when linking to existing notes.
    - Identify 2-6 related existing notes or topic links.
 3. Choose a stable filename:
@@ -74,7 +74,7 @@ related:
    - Add the new note under a recent notes or relevant topic section.
    - Keep links as Obsidian wikilinks.
    - Preserve existing index content.
-6. If an earlier attempt placed the note in a repository and the user asked for the user-level location, move it to `HistorySummary` and remove the repo-local copy.
+6. If an earlier attempt placed the note in a repository or the old `HistorySummary` directory and the user asked for the user-level Memory Wiki, move it to `MemoryWiki` and remove the stale copy.
 7. Report the absolute path to the saved note and mention that the folder can be opened as an Obsidian vault.
 
 ## Style

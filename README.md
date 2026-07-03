@@ -1,6 +1,6 @@
-# HistorySummary
+# MemoryWiki
 
-This directory is a portable, Obsidian-compatible knowledge vault for durable AI conversation notes, task summaries, decisions, and reusable project context.
+This directory is a portable, Obsidian-compatible Memory Wiki for durable AI conversation notes, task summaries, decisions, concepts, paper notes, skills, and reusable project context.
 
 It is intentionally stored under `Documents` instead of a single tool's private config directory so Codex, other AI assistants, Obsidian, editors, and git can all work with the same notes.
 
@@ -9,12 +9,16 @@ It is intentionally stored under `Documents` instead of a single tool's private 
 Open this folder as an Obsidian vault:
 
 ```text
-C:\Users\Administrator\Documents\HistorySummary
+C:\Users\Administrator\Documents\MemoryWiki
 ```
 
 Start from:
 
 - [[00_Index]]
+
+## Note Types
+
+`history-summary` is the raw intake layer: one conversation or task summarized into a durable note. Over time, repeated or important material should be distilled into `concept`, `decision`, `paper`, `project`, and `skill` notes.
 
 ## Note Format
 
