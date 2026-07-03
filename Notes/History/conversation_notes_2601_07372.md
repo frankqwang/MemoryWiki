@@ -11,7 +11,7 @@ aliases:
   - Engram 论文与 nanochat 启发
   - Conditional Memory via Scalable Lookup 笔记
 related:
-  - "[[00_Index]]"
+  - "[[Home]]"
   - "[[Notes/Concepts/Engram]]"
   - "[[Notes/Concepts/Conditional Memory]]"
   - "[[Notes/Projects/nanochat]]"
@@ -181,7 +181,7 @@ nanochat 当前模型在 `nanochat/gpt.py` 里已经有一些低 FLOPs、高参�
 
 ## Related
 
-- [[00_Index|MemoryWiki Index]]
+- [[Home|MemoryWiki 首页]]
 - [[Notes/Concepts/Engram]]
 - [[Notes/Concepts/Conditional Memory]]
 - [[Notes/Projects/nanochat]]

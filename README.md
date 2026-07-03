@@ -16,11 +16,42 @@ C:\Users\Administrator\Documents\MemoryWiki
 
 入口：
 
-- [[00_Index]]
+- [[Home]]
+
+## 用 Codex 快速搭建
+
+别人想复刻这个流程时，可以让 Codex 在自己的 `Documents` 下创建同样结构。可直接复制这段给 Codex：
+
+```text
+请帮我在 Documents 下建立一个 MemoryWiki 目录，作为 Obsidian-compatible 的个人记忆 wiki。
+
+要求：
+- 根目录只保留 README.md、README.en.md、AGENTS.md、Home.md、.gitignore 等项目级说明和入口。
+- 具体笔记放到 Notes/ 下，按 Concepts、History、Projects、Skills 分类。
+- 建立 Indexes/ 目录，放 Papers、Projects、Decisions、Skills 等索引页。
+- 建立 _templates/ 目录，放 history-summary、concept、decision 模板。
+- 建立 _skills/memory-wiki/SKILL.md，并把同一份 skill 安装到 ~/.codex/skills/memory-wiki。
+- 所有普通笔记默认中文正文，英文术语可以保留在标题、别名和链接里。
+- 用 git 初始化仓库，首次提交，并告诉我如何打开 Obsidian vault。
+```
 
 ## 目录结构
 
 根目录只保留项目介绍、使用说明、索引和维护入口。具体笔记放在 `Notes/` 下：
+
+```text
+MemoryWiki/
+  README.md       中文项目说明
+  README.en.md    英文项目说明
+  AGENTS.md       给 AI 助手看的维护规则
+  Home.md         Obsidian 入口页
+  Indexes/        主题索引页
+  Notes/          具体笔记
+  _templates/     新笔记模板
+  _skills/        可复用 Codex skill 副本
+```
+
+具体笔记目录：
 
 ```text
 Notes/
@@ -40,6 +71,17 @@ Notes/
 - `project`：项目上下文
 - `skill`：可复用的 AI 工作流
 
+## 索引是什么
+
+以前这里用过 MOC 这个词，它是 `Map of Content` 的缩写，意思就是“主题索引页”。为了少一点术语，现在统一叫 `Indexes/`。
+
+索引页不是正文笔记，而是导航。例如：
+
+- `Indexes/Papers.md`：论文相关笔记入口
+- `Indexes/Projects.md`：项目入口
+- `Indexes/Decisions.md`：重要决策入口
+- `Indexes/Skills.md`：AI skill 入口
+
 ## 笔记格式
 
 使用普通 Markdown、YAML frontmatter 和 Obsidian `[[WikiLinks]]`。
@@ -57,7 +99,7 @@ tags:
 aliases:
   - 可选别名
 related:
-  - "[[00_Index]]"
+  - "[[Home]]"
 ---
 ```
 
@@ -73,7 +115,7 @@ related:
 ## 链接规则
 
 - 用 `[[WikiLinks]]` 连接相关笔记和主题。
-- 新增重要笔记时更新 [[00_Index]] 和相关 MOC。
+- 新增重要笔记时更新 [[Home]] 和相关 index。
 - 可以创建暂时不存在的主题链接；之后可以补成概念页。
 - 文件名尽量稳定、ASCII 友好；可读标题放在 frontmatter 的 `title` 和 `aliases` 里。
 

@@ -15,14 +15,14 @@ related:
 
 # Mixture of Experts
 
-Mixture of Experts is a sparse neural architecture that routes tokens to a subset of expert networks, increasing total model parameters without activating all parameters for every token.
+Mixture of Experts，简称 MoE，是一种稀疏神经网络结构。它把 token 路由到一部分 expert network，从而增加总参数量，但每个 token 不需要激活全部参数。
 
-## In This Vault
+## 在这个 wiki 里的作用
 
-MoE appears mainly as the comparison point for [[Notes/Concepts/Conditional Memory]] and [[Notes/Concepts/Engram]].
+这里主要把 MoE 作为 [[Notes/Concepts/Conditional Memory|Conditional Memory]] 和 [[Notes/Concepts/Engram|Engram]] 的对照：MoE 扩展条件计算，Engram 扩展条件记忆。
 
-## Related
+## 相关
 
-- [[Notes/Concepts/Engram]]
-- [[Notes/Concepts/Conditional Memory]]
-- [[Notes/History/conversation_notes_2601_07372]]
+- [[Notes/Concepts/Engram|Engram]]
+- [[Notes/Concepts/Conditional Memory|Conditional Memory]]
+- [[Notes/History/conversation_notes_2601_07372|Engram 论文笔记]]

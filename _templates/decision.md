@@ -6,22 +6,22 @@ tags:
   - decision
 aliases: []
 related:
-  - "[[00_Index]]"
-  - "[[01_MOCs/Decisions|Decisions]]"
+  - "[[Home]]"
+  - "[[Indexes/Decisions|决策]]"
 ---
 
-# Decision
+# 决策
 
-## Context
+## 背景
 
-## Decision
+## 决策
 
-## Rationale
+## 理由
 
-## Alternatives Considered
+## 考虑过的替代方案
 
-## Consequences
+## 影响
 
-## Related
+## 相关
 
-- [[01_MOCs/Decisions|Decisions]]
+- [[Indexes/Decisions|决策]]

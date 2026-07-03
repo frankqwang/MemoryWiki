@@ -9,22 +9,22 @@ aliases:
   - Obsidian vault
   - MemoryWiki
 related:
-  - "[[00_Index]]"
+  - "[[Home]]"
   - "[[Notes/Skills/memory-wiki]]"
 ---
 
 # Memory Wiki
 
-This vault uses plain Markdown, YAML frontmatter, and Obsidian wikilinks to keep AI conversation history, decisions, concepts, papers, skills, and project context reusable across tools.
+Memory Wiki 是一种个人长期记忆库：用普通 Markdown、YAML frontmatter 和 Obsidian `[[WikiLinks]]` 保存 AI 对话历史、决策、概念、论文、技能和项目上下文。
 
-## Principles
+## 原则
 
-- Store durable conclusions, decisions, and reusable context.
-- Avoid dumping raw chat transcripts.
-- Prefer connected notes over isolated summaries.
-- Periodically distill repeated history summaries into concept and decision notes.
+- 保存稳定结论、决策理由和可复用上下文。
+- 不直接堆聊天全文。
+- 让笔记之间互相链接，而不是孤立存档。
+- 定期把重复出现的 history summary 蒸馏成概念笔记和决策笔记。
 
-## Related
+## 相关
 
-- [[Notes/Skills/memory-wiki]]
-- [[00_Index]]
+- [[Notes/Skills/memory-wiki|memory-wiki]]
+- [[Home]]

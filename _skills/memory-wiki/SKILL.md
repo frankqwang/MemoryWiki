@@ -24,7 +24,7 @@ Treat this directory as an Obsidian vault. Prefer plain Markdown, YAML frontmatt
 
 Maintain these files and conventions:
 
-- `00_Index.md`: top-level map of contents. Create it if missing and update it after adding notes.
+- `Home.md`: top-level map of contents. Create it if missing and update it after adding notes.
 - Keep the vault root clean. Concrete notes belong under `Notes/`.
 - Use `Notes/History/` for `history-summary` notes.
 - Use `Notes/Concepts/` for `concept`, `paper`, and durable topic notes.
@@ -47,7 +47,7 @@ tags:
 aliases:
   - Optional alternate title
 related:
-  - "[[00_Index]]"
+  - "[[Home]]"
 ---
 ```
 
@@ -75,7 +75,7 @@ related:
    - Files, commands, URLs, or artifacts created.
    - A `Related` section containing wikilinks to existing notes and topic links.
    - Open questions or follow-ups, if any.
-6. Update `00_Index.md`:
+6. Update `Home.md`:
    - Add the new note under a recent notes or relevant topic section.
    - Keep links as Obsidian wikilinks.
    - Preserve existing index content.

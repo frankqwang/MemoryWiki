@@ -13,8 +13,8 @@ C:\Users\Administrator\Documents\MemoryWiki
 ## Before Writing
 
 1. Read `README.md`.
-2. Read `00_Index.md`.
-3. Inspect `01_MOCs/` for the right topic index.
+2. Read `Home.md`.
+3. Inspect `Indexes/` for the right topic index.
 4. Inspect `_templates/` and reuse the closest template.
 5. Search existing notes before creating a duplicate.
 
@@ -28,6 +28,10 @@ Keep the vault root clean. Put concrete notes under `Notes/`:
 - `Notes/Skills/` for `skill` notes.
 
 Root-level files should be limited to project documentation, indexes, configuration, and AI maintenance instructions.
+
+## Language
+
+Use Chinese for ordinary note prose by default. Keep English technical terms in titles, aliases, paths, and wikilinks when they are the natural names, such as `Engram`, `MoE`, `MemoryWiki`, and `nanochat`.
 
 ## Note Types
 
@@ -43,7 +47,7 @@ Root-level files should be limited to project documentation, indexes, configurat
 ## Linking
 
 - Use Obsidian `[[WikiLinks]]`.
-- Link every new note to `[[00_Index]]` and at least one MOC in `01_MOCs/`.
+- Link every new note to `[[Home]]` and at least one index in `Indexes/`.
 - Prefer linking to existing notes by exact filename/title.
 - Dangling topic links are acceptable when they are useful future nodes.
 

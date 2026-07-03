@@ -6,23 +6,23 @@ tags:
   - codex/history
 aliases: []
 related:
-  - "[[00_Index]]"
+  - "[[Home]]"
 ---
 
-# Title
+# 标题
 
-## User Goal
+## 用户目标
 
-## What Happened
+## 做了什么
 
-## Key Findings
+## 关键发现
 
-## Decisions
+## 决策
 
-## Artifacts
+## 产物
 
-## Related
+## 相关
 
-- [[00_Index]]
+- [[Home]]
 
-## Follow-ups
+## 后续事项

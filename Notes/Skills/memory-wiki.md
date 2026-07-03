@@ -9,26 +9,26 @@ aliases:
   - MemoryWiki skill
 related:
   - "[[Notes/Concepts/Memory Wiki]]"
-  - "[[01_MOCs/Skills|Skills]]"
+  - "[[Indexes/Skills|技能]]"
 ---
 
 # memory-wiki
 
-`memory-wiki` is the Codex skill that writes cross-session notes into this vault.
+`memory-wiki` 是 Codex skill，用来把跨会话的对话、任务、决策和项目上下文写入 MemoryWiki。
 
-## Locations
+## 位置
 
-- Installed Codex skill: `C:\Users\Administrator\.codex\skills\memory-wiki\SKILL.md`
-- Vault copy: `_skills\memory-wiki\SKILL.md`
+- Codex 已安装副本：`C:\Users\Administrator\.codex\skills\memory-wiki\SKILL.md`
+- MemoryWiki 内副本：`_skills\memory-wiki\SKILL.md`
 
-## Current Behavior
+## 当前行为
 
-- Save notes to `C:\Users\Administrator\Documents\MemoryWiki`.
-- Use Obsidian-compatible Markdown.
-- Update `00_Index.md` and relevant MOC pages.
-- Keep notes outside project repositories unless explicitly requested.
+- 默认保存到 `C:\Users\Administrator\Documents\MemoryWiki`。
+- 使用 Obsidian-compatible Markdown。
+- 更新 `Home.md` 和相关索引页。
+- 除非用户明确要求，不把长期记忆笔记写进项目仓库。
 
-## Related
+## 相关
 
-- [[Notes/Concepts/Memory Wiki]]
-- [[01_MOCs/Skills|Skills]]
+- [[Notes/Concepts/Memory Wiki|Memory Wiki]]
+- [[Indexes/Skills|技能]]

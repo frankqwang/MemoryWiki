@@ -6,17 +6,17 @@ tags:
   - concept
 aliases: []
 related:
-  - "[[00_Index]]"
+  - "[[Home]]"
 ---
 
-# Title
+# 标题
 
-## Definition
+## 定义
 
-## Why It Matters
+## 为什么重要
 
-## Related Notes
+## 相关笔记
 
-- [[00_Index]]
+- [[Home]]
 
-## Open Questions
+## 未解决问题
