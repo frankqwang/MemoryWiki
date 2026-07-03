@@ -1,4 +1,0 @@
-interface:
-  display_name: "Save History Summary"
-  short_description: "Save cross-session conversation notes to Documents/MemoryWiki."
-  default_prompt: "Summarize this conversation as an Obsidian-compatible Markdown note and save it under Documents/MemoryWiki."

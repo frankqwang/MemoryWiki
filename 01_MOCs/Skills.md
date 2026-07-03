@@ -15,11 +15,11 @@ related:
 
 ## Local Skills
 
-- [[save-history-summary]]
+- [[memory-wiki]]
 
 ## Maintenance
 
-- Installed Codex copy: `C:\Users\Administrator\.codex\skills\save-history-summary\SKILL.md`
-- Vault copy: `_skills\save-history-summary\SKILL.md`
+- Installed Codex copy: `C:\Users\Administrator\.codex\skills\memory-wiki\SKILL.md`
+- Vault copy: `_skills\memory-wiki\SKILL.md`
 
 Keep both copies synchronized when changing the workflow.

@@ -10,7 +10,7 @@ aliases:
   - MemoryWiki
 related:
   - "[[00_Index]]"
-  - "[[save-history-summary]]"
+  - "[[memory-wiki]]"
 ---
 
 # Memory Wiki
@@ -26,5 +26,5 @@ This vault uses plain Markdown, YAML frontmatter, and Obsidian wikilinks to keep
 
 ## Related
 
-- [[save-history-summary]]
+- [[memory-wiki]]
 - [[00_Index]]

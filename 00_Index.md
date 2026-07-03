@@ -38,11 +38,11 @@ This folder is an Obsidian-compatible vault for cross-session AI knowledge. `his
 - [[MoE]]
 - [[nanochat]]
 - [[Memory Wiki]]
-- [[save-history-summary]]
+- [[memory-wiki]]
 
 ## Conventions
 
 - New notes should use YAML frontmatter.
 - Use `[[WikiLinks]]` for topics and related notes.
 - Keep durable conclusions, decisions, and follow-ups here instead of in project repositories unless explicitly requested.
-- AI assistants should read `_skills/save-history-summary/SKILL.md` before creating or updating notes.
+- AI assistants should read `_skills/memory-wiki/SKILL.md` before creating or updating notes.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "MemoryWiki"
+  short_description: "Maintain cross-session notes in Documents/MemoryWiki."
+  default_prompt: "Summarize this conversation as an Obsidian-compatible MemoryWiki note and save it under Documents/MemoryWiki."

@@ -70,18 +70,18 @@ related:
 可复用的 Codex skill 放在：
 
 ```text
-_skills\save-history-summary\SKILL.md
+_skills\memory-wiki\SKILL.md
 ```
 
 其他 AI 助手打开这个目录时，应先阅读：
 
 - [AGENTS.md](AGENTS.md)
-- [_skills/save-history-summary/SKILL.md](_skills/save-history-summary/SKILL.md)
+- [_skills/memory-wiki/SKILL.md](_skills/memory-wiki/SKILL.md)
 
 已安装的 Codex skill 位于：
 
 ```text
-C:\Users\Administrator\.codex\skills\save-history-summary\SKILL.md
+C:\Users\Administrator\.codex\skills\memory-wiki\SKILL.md
 ```
 
 如果记忆维护流程发生变化，需要同步更新 vault 内副本和已安装副本。

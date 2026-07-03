@@ -45,7 +45,7 @@ Commit meaningful batches of changes. Do not commit Obsidian workspace state or 
 The note-saving skill lives at:
 
 ```text
-_skills\save-history-summary\SKILL.md
+_skills\memory-wiki\SKILL.md
 ```
 
 Keep it synchronized with the installed Codex copy when changing the workflow.

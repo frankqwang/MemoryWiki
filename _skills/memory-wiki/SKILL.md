@@ -1,17 +1,17 @@
 ---
-name: save-history-summary
-description: Save cross-session conversation or task summaries as Obsidian-compatible Markdown knowledge-base notes in the user-level Documents `MemoryWiki` instead of the current repository. Use when the user asks to summarize chats, conversation history, task history, lessons learned, decisions, notes for future sessions, Obsidian-style notes, knowledge-base notes, linked notes, backlinks, wikilinks, or a unified place; asks in Chinese for conversation notes or history notes; mentions MemoryWiki or HistorySummary; or asks not to put the note in the repo.
+name: memory-wiki
+description: Maintain the user-level Documents `MemoryWiki` as an Obsidian-compatible Markdown memory wiki for cross-session AI knowledge. Use when the user asks to summarize chats, save conversation or task history, update personal memory, maintain knowledge-base notes, create linked notes, update backlinks or wikilinks, preserve lessons learned, decisions, project context, paper notes, or notes for future sessions; asks in Chinese for conversation notes or history notes; mentions MemoryWiki or HistorySummary; or asks not to put the note in the current repo.
 ---
 
-# Save History Summary
+# MemoryWiki
 
 ## Overview
 
-Create durable Obsidian-compatible Markdown notes from the current conversation or completed work and store them under the user's Documents folder so they are reusable across repositories, Codex sessions, and other AI tools.
+Create and maintain durable Obsidian-compatible Markdown notes from conversations, completed work, decisions, concepts, papers, and project context under the user's Documents folder so they are reusable across repositories, Codex sessions, and other AI tools.
 
 ## Destination
 
-Save history summaries under:
+Save MemoryWiki notes under:
 
 - Windows: `%USERPROFILE%\Documents\MemoryWiki`
 - POSIX: `$HOME/Documents/MemoryWiki`
@@ -83,4 +83,4 @@ Use clear Markdown with short sections. Preserve useful technical specifics, but
 
 ## Repository Hygiene
 
-Do not stage, commit, or modify repository files for history summaries unless explicitly requested. If the repo is already dirty, leave unrelated changes untouched.
+Do not stage, commit, or modify unrelated project repository files while maintaining MemoryWiki unless explicitly requested. If the current project repo is already dirty, leave unrelated changes untouched.

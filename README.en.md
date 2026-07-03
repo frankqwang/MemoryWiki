@@ -70,18 +70,18 @@ Recommended sections:
 The reusable Codex skill is included here:
 
 ```text
-_skills\save-history-summary\SKILL.md
+_skills\memory-wiki\SKILL.md
 ```
 
 If another AI assistant opens this folder, it should read:
 
 - [AGENTS.md](AGENTS.md)
-- [_skills/save-history-summary/SKILL.md](_skills/save-history-summary/SKILL.md)
+- [_skills/memory-wiki/SKILL.md](_skills/memory-wiki/SKILL.md)
 
 The installed Codex copy currently lives at:
 
 ```text
-C:\Users\Administrator\.codex\skills\save-history-summary\SKILL.md
+C:\Users\Administrator\.codex\skills\memory-wiki\SKILL.md
 ```
 
 Keep both copies synchronized when the memory-maintenance workflow changes.

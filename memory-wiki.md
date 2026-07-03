@@ -1,25 +1,25 @@
 ---
-title: save-history-summary
+title: memory-wiki
 created: 2026-07-03
 type: skill
 tags:
   - skill
   - codex/history
 aliases:
-  - Save History Summary skill
+  - MemoryWiki skill
 related:
   - "[[Memory Wiki]]"
   - "[[01_MOCs/Skills|Skills]]"
 ---
 
-# save-history-summary
+# memory-wiki
 
-`save-history-summary` is the Codex skill that writes cross-session notes into this vault.
+`memory-wiki` is the Codex skill that writes cross-session notes into this vault.
 
 ## Locations
 
-- Installed Codex skill: `C:\Users\Administrator\.codex\skills\save-history-summary\SKILL.md`
-- Vault copy: `_skills\save-history-summary\SKILL.md`
+- Installed Codex skill: `C:\Users\Administrator\.codex\skills\memory-wiki\SKILL.md`
+- Vault copy: `_skills\memory-wiki\SKILL.md`
 
 ## Current Behavior
 
