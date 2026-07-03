@@ -26,12 +26,13 @@ Treat this directory as an Obsidian vault. Prefer plain Markdown, YAML frontmatt
 Maintain these files and conventions:
 
 - `Home.md`: top-level map of contents. Create it if missing and update it after adding notes.
-- Keep the vault root clean. Raw captures belong under `Memory/`; refined knowledge belongs under `Wiki/`.
+- Keep the vault root clean. Raw captures belong under `Memory/`; user-maintained manual notes belong under `Notes/`; refined knowledge belongs under `Wiki/`.
 - Use `Memory/Summaries/` for raw conversation and task summaries.
+- Use `Notes/` for manual notes written by the user or explicitly requested as personal notes. Preserve the user's wording unless asked to rewrite.
 - Use `Wiki/Concepts/` for concepts, papers, and durable topic notes.
 - Use `Wiki/Projects/` for project notes.
 - Use `Wiki/Decisions/` for decision notes.
-- Use `_skills/` only for AI maintenance workflows and Codex skill copies; do not treat it as an ordinary note area.
+- Use `_skills/` only for AI maintenance workflows, templates, and Codex skill copies; do not treat it as an ordinary note area.
 - Use stable ASCII filenames; use frontmatter `title` and `aliases` for human-readable names.
 - Use Obsidian wikilinks for related topics and notes, e.g. `[[Wiki/Projects/nanochat]]`, `[[Wiki/Concepts/Engram]]`, `[[Memory/Summaries/conversation_notes_2601_07372|Engram paper notes]]`.
 - It is acceptable to create dangling topic links; Obsidian will surface them as future notes.
@@ -63,11 +64,12 @@ related:
    - List existing Markdown files in `MemoryWiki`.
    - Reuse exact filenames or titles for wikilinks when linking to existing notes.
    - Identify 2-6 related existing notes or topic links.
+   - Reuse templates from `_skills/memory-wiki/templates/` when they fit the note type.
 3. Choose a stable filename:
    - Use a short slug from the topic plus date when helpful.
    - Prefer lowercase ASCII for filenames, e.g. `conversation_notes_2601_07372.md`, `history_summary_openai_api_setup_2026-07-03.md`.
    - Avoid overwriting existing notes; append a suffix such as `_2` if needed.
-4. Put raw summaries under `Memory/` and refined notes under the right `Wiki/` subdirectory.
+4. Put raw summaries under `Memory/`, user-authored manual notes under `Notes/`, and refined notes under the right `Wiki/` subdirectory.
 5. Write a concise Markdown note with:
    - YAML frontmatter.
    - Title.

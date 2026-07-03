@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-MemoryWiki is a portable, Obsidian-compatible personal memory wiki for raw AI conversation/task memory and refined concepts, decisions, paper notes, and project context.
+MemoryWiki is a portable, Obsidian-compatible personal memory wiki for raw AI conversation/task memory, manual notes, and refined concepts, decisions, paper notes, and project context.
 
 It intentionally lives under `Documents` instead of a single tool's private config directory, so Codex, other AI assistants, Obsidian, editors, and Git can all work with the same notes.
 
@@ -26,17 +26,17 @@ Start from:
 
 ## Core Layout
 
-The vault has two main content areas:
+The vault has three main content areas:
 
 ```text
 MemoryWiki/
   Memory/      raw memory: conversation summaries, task logs, lightly processed history
+  Notes/       manual notes: user-maintained ideas, drafts, and observations
   Wiki/        refined knowledge: concepts, projects, decisions, papers
   Home.md      home and navigation
   README.md    Chinese README
   README.en.md English README
   AGENTS.md    AI maintenance rules
-  _templates/  note templates
   _skills/     AI maintenance workflow and Codex skill copy, not ordinary notes
 ```
 
@@ -46,18 +46,22 @@ Current convention:
 Memory/
   Summaries/   raw conversation and task summaries
 
+Notes/
+  README.md    manual note area guide
+
 Wiki/
   Concepts/    concepts, methods, terms, paper topics
   Projects/    project context
   Decisions/   important decisions
 ```
 
-## Memory vs Wiki
+## Memory vs Notes vs Wiki
 
 - `Memory/`: capture first, preserve context. Use it for "what happened in this conversation/task".
+- `Notes/`: user-maintained manual notes. Use it for temporary ideas, drafts, personal observations, and material waiting to be refined.
 - `Wiki/`: refined knowledge. Use it for stable conclusions, reusable processes, concepts, and decisions.
 
-In short, `Memory/` is raw material; `Wiki/` is distilled knowledge.
+In short, `Memory/` is raw record, `Notes/` is the user's handwritten area, and `Wiki/` is distilled knowledge.
 
 ## Quick Start With Codex
 
@@ -69,9 +73,10 @@ Create a MemoryWiki directory under Documents as an Obsidian-compatible personal
 Requirements:
 - Keep only project-level docs and entrypoints in the root: README.md, README.en.md, AGENTS.md, Home.md, .gitignore.
 - Create Memory/Summaries/ for raw conversation and task summaries.
+- Create Notes/ for user-maintained manual notes.
 - Create Wiki/Concepts/, Wiki/Projects/, and Wiki/Decisions/ for refined knowledge.
-- Create _templates/ with history-summary, concept, and decision templates.
-- Create _skills/memory-wiki/SKILL.md and install the same skill to ~/.codex/skills/memory-wiki.
+- Create _skills/memory-wiki/SKILL.md and put history-summary, concept, decision, and other templates under _skills/memory-wiki/templates/.
+- Install the same skill to ~/.codex/skills/memory-wiki.
 - Default ordinary note prose to Chinese; English terms may remain in titles, aliases, and links.
 - Initialize git, create the first commit, and tell me how to open it as an Obsidian vault.
 ```
@@ -79,12 +84,13 @@ Requirements:
 ## Note Types
 
 - `history-summary`: raw conversation or task summary, stored in `Memory/Summaries/`.
+- `note`: user-maintained manual note, stored in `Notes/`.
 - `concept`: concepts, methods, terms, stored in `Wiki/Concepts/`.
 - `decision`: decisions and rationale, stored in `Wiki/Decisions/`.
 - `paper`: paper or article notes, usually stored in `Wiki/Concepts/` unless the vault grows.
 - `project`: project context, stored in `Wiki/Projects/`.
 
-Reusable AI maintenance workflows are not ordinary wiki notes. The current workflow lives in `_skills/memory-wiki/SKILL.md` and is synchronized with the installed Codex skill directory.
+Reusable AI maintenance workflows and templates are not ordinary wiki notes. The current workflow lives in `_skills/memory-wiki/` and is synchronized with the installed Codex skill directory.
 
 ## Note Format
 

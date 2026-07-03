@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-MemoryWiki 是一个可移植、兼容 Obsidian 的个人记忆 wiki，用来保存 AI 对话摘要、任务记录，以及进一步加工后的概念、决策、论文笔记和项目上下文。
+MemoryWiki 是一个可移植、兼容 Obsidian 的个人记忆 wiki，用来保存 AI 对话摘要、任务记录、手动笔记，以及进一步加工后的概念、决策、论文笔记和项目上下文。
 
 它放在 `Documents` 下，而不是某个工具的私有配置目录里，这样 Codex、其他 AI 助手、Obsidian、编辑器和 Git 都能读写同一套资料。
 
@@ -26,17 +26,17 @@ C:\Users\Administrator\Documents\MemoryWiki
 
 ## 核心结构
 
-这个库只有两个主要内容目录：
+这个库有三个主要内容目录：
 
 ```text
 MemoryWiki/
   Memory/      原始记忆：对话摘要、任务记录、未经深度整理的历史
+  Notes/       手动笔记：用户自己维护的想法、草稿和观察
   Wiki/        加工知识：概念、项目、决策、论文等整理后的内容
   Home.md      首页和导航
   README.md    中文说明
   README.en.md 英文说明
   AGENTS.md    给 AI 助手看的维护规则
-  _templates/  新笔记模板
   _skills/     AI 维护流程和 Codex skill 副本，不作为普通笔记区
 ```
 
@@ -46,18 +46,22 @@ MemoryWiki/
 Memory/
   Summaries/   原始对话摘要和任务摘要
 
+Notes/
+  README.md    手动笔记区说明
+
 Wiki/
   Concepts/    概念、方法、术语、论文主题
   Projects/    项目上下文
   Decisions/   重要决策
 ```
 
-## Memory 和 Wiki 的区别
+## Memory、Notes 和 Wiki 的区别
 
 - `Memory/`：先记下来，保留上下文。适合放“这次对话讲了什么”“这次任务做了什么”。
+- `Notes/`：你自己手动维护的笔记。适合放临时想法、草稿、个人观察和待整理材料。
 - `Wiki/`：整理后的知识。适合放“稳定结论是什么”“以后应该怎么做”“这个概念是什么”。
 
-也就是说，`Memory/` 是原材料，`Wiki/` 是加工后的资料。
+也就是说，`Memory/` 是原始记录，`Notes/` 是个人手写区，`Wiki/` 是加工后的资料。
 
 ## 用 Codex 快速搭建
 
@@ -69,9 +73,10 @@ Wiki/
 要求：
 - 根目录只保留 README.md、README.en.md、AGENTS.md、Home.md、.gitignore 等项目级说明和入口。
 - 建立 Memory/Summaries/，用来保存原始对话摘要和任务摘要。
+- 建立 Notes/，用来保存用户手动更新的个人笔记。
 - 建立 Wiki/Concepts/、Wiki/Projects/、Wiki/Decisions/，用来保存加工后的知识。
-- 建立 _templates/ 目录，放 history-summary、concept、decision 模板。
-- 建立 _skills/memory-wiki/SKILL.md，并把同一份 skill 安装到 ~/.codex/skills/memory-wiki。
+- 建立 _skills/memory-wiki/SKILL.md，并把 history-summary、concept、decision 等模板放到 _skills/memory-wiki/templates/。
+- 把同一份 skill 安装到 ~/.codex/skills/memory-wiki。
 - 普通笔记默认中文正文，英文术语可以保留在标题、别名和链接里。
 - 用 git 初始化仓库，首次提交，并告诉我如何打开 Obsidian vault。
 ```
@@ -79,12 +84,13 @@ Wiki/
 ## 笔记类型
 
 - `history-summary`：一次对话或任务的原始摘要，放在 `Memory/Summaries/`。
+- `note`：用户手动维护的个人笔记，放在 `Notes/`。
 - `concept`：概念、方法、术语，放在 `Wiki/Concepts/`。
 - `decision`：决策和理由，放在 `Wiki/Decisions/`。
 - `paper`：论文或文章笔记，可放在 `Wiki/Concepts/` 或之后单独扩展。
 - `project`：项目上下文，放在 `Wiki/Projects/`。
 
-可复用的 AI 维护流程不作为普通 wiki 笔记保存；当前放在 `_skills/memory-wiki/SKILL.md`，并同步到 Codex 的已安装 skill 目录。
+可复用的 AI 维护流程和模板不作为普通 wiki 笔记保存；当前放在 `_skills/memory-wiki/`，并同步到 Codex 的已安装 skill 目录。
 
 ## 笔记格式
 

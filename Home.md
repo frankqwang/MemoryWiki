@@ -12,7 +12,7 @@ related: []
 
 # MemoryWiki 首页
 
-这是一个给人和 AI 共同维护的长期记忆 wiki。`Memory/` 保存原始摘要和任务记录，`Wiki/` 保存加工后的概念、项目和决策。
+这是一个给人和 AI 共同维护的长期记忆 wiki。`Memory/` 保存原始摘要和任务记录，`Notes/` 保存手动笔记，`Wiki/` 保存加工后的概念、项目和决策。
 
 ## 从这里开始
 
@@ -22,6 +22,10 @@ related: []
 ## Memory
 
 - [[Memory/Summaries/conversation_notes_2601_07372|arXiv 2601.07372 与 nanochat 启发]]
+
+## Notes
+
+- [[Notes/README|手动笔记说明]]
 
 ## Wiki
 
@@ -48,5 +52,5 @@ related: []
 
 - 新笔记使用 YAML frontmatter。
 - 相关内容用 `[[WikiLinks]]` 互相连接。
-- 原始记录放在 `Memory/`，加工后的资料放在 `Wiki/`。
+- 原始记录放在 `Memory/`，手动笔记放在 `Notes/`，加工后的资料放在 `Wiki/`。
 - AI 助手创建或更新笔记前，应阅读 `_skills/memory-wiki/SKILL.md`。
