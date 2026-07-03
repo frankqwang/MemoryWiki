@@ -9,8 +9,8 @@ tags:
 aliases:
   - DeepSeek Engram
 related:
-  - "[[Conditional Memory]]"
-  - "[[conversation_notes_2601_07372]]"
+  - "[[Notes/Concepts/Conditional Memory]]"
+  - "[[Notes/History/conversation_notes_2601_07372]]"
   - "[[01_MOCs/Papers|Papers]]"
 ---
 
@@ -20,12 +20,12 @@ Engram is DeepSeek's conditional memory module for language models. It retrieves
 
 ## Key Points
 
-- Designed as a sparse memory axis complementary to [[MoE]] conditional computation.
+- Designed as a sparse memory axis complementary to [[Notes/Concepts/MoE]] conditional computation.
 - Uses tokenizer compression, multi-head hashing, context-aware gating, and selected layer insertion.
 - The main paper argues that Engram offloads static local pattern reconstruction from early Transformer layers.
 
 ## Related
 
-- [[Conditional Memory]]
-- [[conversation_notes_2601_07372|arXiv 2601.07372 与 nanochat 启发]]
-- [[nanochat]]
+- [[Notes/Concepts/Conditional Memory]]
+- [[Notes/History/conversation_notes_2601_07372|arXiv 2601.07372 与 nanochat 启发]]
+- [[Notes/Projects/nanochat]]

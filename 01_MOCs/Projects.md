@@ -15,7 +15,7 @@ related:
 
 ## Active
 
-- [[nanochat]]
+- [[Notes/Projects/nanochat]]
 
 ## Practice
 

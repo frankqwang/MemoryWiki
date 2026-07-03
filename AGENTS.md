@@ -18,6 +18,17 @@ C:\Users\Administrator\Documents\MemoryWiki
 4. Inspect `_templates/` and reuse the closest template.
 5. Search existing notes before creating a duplicate.
 
+## File Placement
+
+Keep the vault root clean. Put concrete notes under `Notes/`:
+
+- `Notes/History/` for `history-summary` notes.
+- `Notes/Concepts/` for `concept`, `paper`, and durable topic notes.
+- `Notes/Projects/` for `project` notes.
+- `Notes/Skills/` for `skill` notes.
+
+Root-level files should be limited to project documentation, indexes, configuration, and AI maintenance instructions.
+
 ## Note Types
 
 - `history-summary`: a summary of one conversation or task.

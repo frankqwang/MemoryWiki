@@ -18,6 +18,18 @@ Start from:
 
 - [[00_Index]]
 
+## Directory Layout
+
+The root only keeps project-level documentation, usage instructions, indexes, and maintenance entrypoints. Concrete notes live under `Notes/`:
+
+```text
+Notes/
+  Concepts/   concepts, methods, terms
+  History/    raw conversation or task summaries
+  Projects/   project context
+  Skills/     AI workflows and skill notes
+```
+
 ## Note Types
 
 `history-summary` is the raw intake layer: one conversation or task summarized into a durable note. Over time, repeated or important material should be distilled into longer-lived note types:

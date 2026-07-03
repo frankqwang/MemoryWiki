@@ -8,7 +8,7 @@ tags:
 aliases:
   - MemoryWiki skill
 related:
-  - "[[Memory Wiki]]"
+  - "[[Notes/Concepts/Memory Wiki]]"
   - "[[01_MOCs/Skills|Skills]]"
 ---
 
@@ -30,5 +30,5 @@ related:
 
 ## Related
 
-- [[Memory Wiki]]
+- [[Notes/Concepts/Memory Wiki]]
 - [[01_MOCs/Skills|Skills]]

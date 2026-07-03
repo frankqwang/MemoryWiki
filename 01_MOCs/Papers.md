@@ -15,10 +15,10 @@ related:
 
 ## LLM Architecture
 
-- [[conversation_notes_2601_07372|Conditional Memory via Scalable Lookup]]
-- [[Engram]]
-- [[Conditional Memory]]
-- [[MoE]]
+- [[Notes/History/conversation_notes_2601_07372|Conditional Memory via Scalable Lookup]]
+- [[Notes/Concepts/Engram]]
+- [[Notes/Concepts/Conditional Memory]]
+- [[Notes/Concepts/MoE]]
 
 ## To Expand
 

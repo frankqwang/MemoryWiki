@@ -9,8 +9,8 @@ aliases:
   - MoE
   - Mixture-of-Experts
 related:
-  - "[[Conditional Memory]]"
-  - "[[Engram]]"
+  - "[[Notes/Concepts/Conditional Memory]]"
+  - "[[Notes/Concepts/Engram]]"
 ---
 
 # Mixture of Experts
@@ -19,10 +19,10 @@ Mixture of Experts is a sparse neural architecture that routes tokens to a subse
 
 ## In This Vault
 
-MoE appears mainly as the comparison point for [[Conditional Memory]] and [[Engram]].
+MoE appears mainly as the comparison point for [[Notes/Concepts/Conditional Memory]] and [[Notes/Concepts/Engram]].
 
 ## Related
 
-- [[Engram]]
-- [[Conditional Memory]]
-- [[conversation_notes_2601_07372]]
+- [[Notes/Concepts/Engram]]
+- [[Notes/Concepts/Conditional Memory]]
+- [[Notes/History/conversation_notes_2601_07372]]

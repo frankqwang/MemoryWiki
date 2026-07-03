@@ -22,7 +22,7 @@ This folder is an Obsidian-compatible vault for cross-session AI knowledge. `his
 
 ## Recent Notes
 
-- [[conversation_notes_2601_07372|arXiv 2601.07372 与 nanochat 启发]]
+- [[Notes/History/conversation_notes_2601_07372|arXiv 2601.07372 与 nanochat 启发]]
 
 ## Maps of Content
 
@@ -33,12 +33,12 @@ This folder is an Obsidian-compatible vault for cross-session AI knowledge. `his
 
 ## Topics
 
-- [[Conditional Memory]]
-- [[Engram]]
-- [[MoE]]
-- [[nanochat]]
-- [[Memory Wiki]]
-- [[memory-wiki]]
+- [[Notes/Concepts/Conditional Memory]]
+- [[Notes/Concepts/Engram]]
+- [[Notes/Concepts/MoE]]
+- [[Notes/Projects/nanochat]]
+- [[Notes/Concepts/Memory Wiki]]
+- [[Notes/Skills/memory-wiki]]
 
 ## Conventions
 

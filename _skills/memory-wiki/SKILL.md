@@ -25,9 +25,13 @@ Treat this directory as an Obsidian vault. Prefer plain Markdown, YAML frontmatt
 Maintain these files and conventions:
 
 - `00_Index.md`: top-level map of contents. Create it if missing and update it after adding notes.
-- Notes can live in the vault root unless the user asks for folders.
+- Keep the vault root clean. Concrete notes belong under `Notes/`.
+- Use `Notes/History/` for `history-summary` notes.
+- Use `Notes/Concepts/` for `concept`, `paper`, and durable topic notes.
+- Use `Notes/Projects/` for `project` notes.
+- Use `Notes/Skills/` for `skill` notes.
 - Use stable ASCII filenames; use frontmatter `title` and `aliases` for human-readable names.
-- Use Obsidian wikilinks for related topics and notes, e.g. `[[nanochat]]`, `[[Engram]]`, `[[conversation_notes_2601_07372|Engram paper notes]]`.
+- Use Obsidian wikilinks for related topics and notes, e.g. `[[Notes/Projects/nanochat]]`, `[[Notes/Concepts/Engram]]`, `[[Notes/History/conversation_notes_2601_07372|Engram paper notes]]`.
 - It is acceptable to create dangling topic links; Obsidian will surface them as future notes.
 
 Use this frontmatter shape for new notes:
@@ -61,7 +65,8 @@ related:
    - Use a short slug from the topic plus date when helpful.
    - Prefer lowercase ASCII for filenames, e.g. `conversation_notes_2601_07372.md`, `history_summary_openai_api_setup_2026-07-03.md`.
    - Avoid overwriting existing notes; append a suffix such as `_2` if needed.
-4. Write a concise Markdown note with:
+4. Put the note in the right `Notes/` subdirectory for its `type`.
+5. Write a concise Markdown note with:
    - YAML frontmatter.
    - Title.
    - User goal or original request.
@@ -70,12 +75,12 @@ related:
    - Files, commands, URLs, or artifacts created.
    - A `Related` section containing wikilinks to existing notes and topic links.
    - Open questions or follow-ups, if any.
-5. Update `00_Index.md`:
+6. Update `00_Index.md`:
    - Add the new note under a recent notes or relevant topic section.
    - Keep links as Obsidian wikilinks.
    - Preserve existing index content.
-6. If an earlier attempt placed the note in a repository or the old `HistorySummary` directory and the user asked for the user-level Memory Wiki, move it to `MemoryWiki` and remove the stale copy.
-7. Report the absolute path to the saved note and mention that the folder can be opened as an Obsidian vault.
+7. If an earlier attempt placed the note in a repository or the old `HistorySummary` directory and the user asked for the user-level Memory Wiki, move it to `MemoryWiki` and remove the stale copy.
+8. Report the absolute path to the saved note and mention that the folder can be opened as an Obsidian vault.
 
 ## Style
 

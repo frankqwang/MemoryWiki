@@ -18,6 +18,18 @@ C:\Users\Administrator\Documents\MemoryWiki
 
 - [[00_Index]]
 
+## 目录结构
+
+根目录只保留项目介绍、使用说明、索引和维护入口。具体笔记放在 `Notes/` 下：
+
+```text
+Notes/
+  Concepts/   概念、方法、术语
+  History/    对话或任务原始摘要
+  Projects/   项目上下文
+  Skills/     AI 工作流和 skill 说明
+```
+
 ## 笔记类型
 
 `history-summary` 是原始摄取层：把一次对话或一次任务总结成稳定笔记。随着内容积累，重复或重要的信息应该进一步沉淀成更长期的笔记类型：

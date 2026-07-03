@@ -8,9 +8,9 @@ tags:
 aliases:
   - 条件记忆
 related:
-  - "[[Engram]]"
-  - "[[MoE]]"
-  - "[[conversation_notes_2601_07372]]"
+  - "[[Notes/Concepts/Engram]]"
+  - "[[Notes/Concepts/MoE]]"
+  - "[[Notes/History/conversation_notes_2601_07372]]"
 ---
 
 # Conditional Memory
@@ -19,11 +19,11 @@ Conditional memory is a sparse modeling idea where a model activates a small num
 
 ## Contrast With Conditional Computation
 
-- [[MoE]] scales computation capacity by routing tokens to experts.
+- [[Notes/Concepts/MoE]] scales computation capacity by routing tokens to experts.
 - Conditional memory scales lookup capacity by retrieving sparse memory slots.
 - The useful design space may be a hybrid allocation between both.
 
 ## Related
 
-- [[Engram]]
-- [[conversation_notes_2601_07372|arXiv 2601.07372 与 nanochat 启发]]
+- [[Notes/Concepts/Engram]]
+- [[Notes/History/conversation_notes_2601_07372|arXiv 2601.07372 与 nanochat 启发]]

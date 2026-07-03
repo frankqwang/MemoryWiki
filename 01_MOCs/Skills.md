@@ -15,7 +15,7 @@ related:
 
 ## Local Skills
 
-- [[memory-wiki]]
+- [[Notes/Skills/memory-wiki]]
 
 ## Maintenance
 

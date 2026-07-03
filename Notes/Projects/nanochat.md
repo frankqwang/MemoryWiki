@@ -8,8 +8,8 @@ tags:
 aliases:
   - nanochat project
 related:
-  - "[[Engram]]"
-  - "[[Conditional Memory]]"
+  - "[[Notes/Concepts/Engram]]"
+  - "[[Notes/Concepts/Conditional Memory]]"
   - "[[01_MOCs/Projects|Projects]]"
 ---
 
@@ -25,6 +25,6 @@ nanochat is the local LLM training and experimentation repository used in the En
 
 ## Related
 
-- [[conversation_notes_2601_07372|arXiv 2601.07372 与 nanochat 启发]]
-- [[Engram]]
-- [[Conditional Memory]]
+- [[Notes/History/conversation_notes_2601_07372|arXiv 2601.07372 与 nanochat 启发]]
+- [[Notes/Concepts/Engram]]
+- [[Notes/Concepts/Conditional Memory]]
