@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-MemoryWiki 是一个可移植、兼容 Obsidian 的个人记忆 wiki，用来保存 AI 对话摘要、任务记录，以及进一步加工后的概念、决策、论文笔记、技能和项目上下文。
+MemoryWiki 是一个可移植、兼容 Obsidian 的个人记忆 wiki，用来保存 AI 对话摘要、任务记录，以及进一步加工后的概念、决策、论文笔记和项目上下文。
 
 它放在 `Documents` 下，而不是某个工具的私有配置目录里，这样 Codex、其他 AI 助手、Obsidian、编辑器和 Git 都能读写同一套资料。
 
@@ -25,13 +25,13 @@ C:\Users\Administrator\Documents\MemoryWiki
 ```text
 MemoryWiki/
   Memory/      原始记忆：对话摘要、任务记录、未经深度整理的历史
-  Wiki/        加工知识：概念、项目、技能、决策、论文等整理后的内容
+  Wiki/        加工知识：概念、项目、决策、论文等整理后的内容
   Home.md      首页和导航
   README.md    中文说明
   README.en.md 英文说明
   AGENTS.md    给 AI 助手看的维护规则
   _templates/  新笔记模板
-  _skills/     Codex skill 副本
+  _skills/     AI 维护流程和 Codex skill 副本，不作为普通笔记区
 ```
 
 当前约定：
@@ -43,7 +43,6 @@ Memory/
 Wiki/
   Concepts/    概念、方法、术语、论文主题
   Projects/    项目上下文
-  Skills/      AI 工作流和 skill 说明
   Decisions/   重要决策
 ```
 
@@ -64,7 +63,7 @@ Wiki/
 要求：
 - 根目录只保留 README.md、README.en.md、AGENTS.md、Home.md、.gitignore 等项目级说明和入口。
 - 建立 Memory/Summaries/，用来保存原始对话摘要和任务摘要。
-- 建立 Wiki/Concepts/、Wiki/Projects/、Wiki/Skills/、Wiki/Decisions/，用来保存加工后的知识。
+- 建立 Wiki/Concepts/、Wiki/Projects/、Wiki/Decisions/，用来保存加工后的知识。
 - 建立 _templates/ 目录，放 history-summary、concept、decision 模板。
 - 建立 _skills/memory-wiki/SKILL.md，并把同一份 skill 安装到 ~/.codex/skills/memory-wiki。
 - 普通笔记默认中文正文，英文术语可以保留在标题、别名和链接里。
@@ -78,7 +77,8 @@ Wiki/
 - `decision`：决策和理由，放在 `Wiki/Decisions/`。
 - `paper`：论文或文章笔记，可放在 `Wiki/Concepts/` 或之后单独扩展。
 - `project`：项目上下文，放在 `Wiki/Projects/`。
-- `skill`：可复用的 AI 工作流，放在 `Wiki/Skills/`。
+
+可复用的 AI 维护流程不作为普通 wiki 笔记保存；当前放在 `_skills/memory-wiki/SKILL.md`，并同步到 Codex 的已安装 skill 目录。
 
 ## 笔记格式
 

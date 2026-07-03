@@ -29,8 +29,8 @@ Maintain these files and conventions:
 - Use `Memory/Summaries/` for raw conversation and task summaries.
 - Use `Wiki/Concepts/` for concepts, papers, and durable topic notes.
 - Use `Wiki/Projects/` for project notes.
-- Use `Wiki/Skills/` for skill notes.
 - Use `Wiki/Decisions/` for decision notes.
+- Use `_skills/` only for AI maintenance workflows and Codex skill copies; do not treat it as an ordinary note area.
 - Use stable ASCII filenames; use frontmatter `title` and `aliases` for human-readable names.
 - Use Obsidian wikilinks for related topics and notes, e.g. `[[Wiki/Projects/nanochat]]`, `[[Wiki/Concepts/Engram]]`, `[[Memory/Summaries/conversation_notes_2601_07372|Engram paper notes]]`.
 - It is acceptable to create dangling topic links; Obsidian will surface them as future notes.

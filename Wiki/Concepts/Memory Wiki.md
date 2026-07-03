@@ -10,12 +10,12 @@ aliases:
   - MemoryWiki
 related:
   - "[[Home]]"
-  - "[[Wiki/Skills/memory-wiki]]"
+  - "[[_skills/memory-wiki/SKILL]]"
 ---
 
 # Memory Wiki
 
-Memory Wiki 是一种个人长期记忆库：用普通 Markdown、YAML frontmatter 和 Obsidian `[[WikiLinks]]` 保存 AI 对话历史、决策、概念、论文、技能和项目上下文。
+Memory Wiki 是一种个人长期记忆库：用普通 Markdown、YAML frontmatter 和 Obsidian `[[WikiLinks]]` 保存 AI 对话历史、决策、概念、论文和项目上下文。
 
 ## 原则
 
@@ -26,5 +26,5 @@ Memory Wiki 是一种个人长期记忆库：用普通 Markdown、YAML frontmatt
 
 ## 相关
 
-- [[Wiki/Skills/memory-wiki|memory-wiki]]
+- [_skills/memory-wiki/SKILL.md](_skills/memory-wiki/SKILL.md)
 - [[Home]]

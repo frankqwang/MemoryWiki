@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-MemoryWiki is a portable, Obsidian-compatible personal memory wiki for raw AI conversation/task memory and refined concepts, decisions, paper notes, skills, and project context.
+MemoryWiki is a portable, Obsidian-compatible personal memory wiki for raw AI conversation/task memory and refined concepts, decisions, paper notes, and project context.
 
 It intentionally lives under `Documents` instead of a single tool's private config directory, so Codex, other AI assistants, Obsidian, editors, and Git can all work with the same notes.
 
@@ -25,13 +25,13 @@ The vault has two main content areas:
 ```text
 MemoryWiki/
   Memory/      raw memory: conversation summaries, task logs, lightly processed history
-  Wiki/        refined knowledge: concepts, projects, skills, decisions, papers
+  Wiki/        refined knowledge: concepts, projects, decisions, papers
   Home.md      home and navigation
   README.md    Chinese README
   README.en.md English README
   AGENTS.md    AI maintenance rules
   _templates/  note templates
-  _skills/     Codex skill copy
+  _skills/     AI maintenance workflow and Codex skill copy, not ordinary notes
 ```
 
 Current convention:
@@ -43,7 +43,6 @@ Memory/
 Wiki/
   Concepts/    concepts, methods, terms, paper topics
   Projects/    project context
-  Skills/      AI workflows and skill notes
   Decisions/   important decisions
 ```
 
@@ -64,7 +63,7 @@ Create a MemoryWiki directory under Documents as an Obsidian-compatible personal
 Requirements:
 - Keep only project-level docs and entrypoints in the root: README.md, README.en.md, AGENTS.md, Home.md, .gitignore.
 - Create Memory/Summaries/ for raw conversation and task summaries.
-- Create Wiki/Concepts/, Wiki/Projects/, Wiki/Skills/, and Wiki/Decisions/ for refined knowledge.
+- Create Wiki/Concepts/, Wiki/Projects/, and Wiki/Decisions/ for refined knowledge.
 - Create _templates/ with history-summary, concept, and decision templates.
 - Create _skills/memory-wiki/SKILL.md and install the same skill to ~/.codex/skills/memory-wiki.
 - Default ordinary note prose to Chinese; English terms may remain in titles, aliases, and links.
@@ -78,7 +77,8 @@ Requirements:
 - `decision`: decisions and rationale, stored in `Wiki/Decisions/`.
 - `paper`: paper or article notes, usually stored in `Wiki/Concepts/` unless the vault grows.
 - `project`: project context, stored in `Wiki/Projects/`.
-- `skill`: reusable AI workflows, stored in `Wiki/Skills/`.
+
+Reusable AI maintenance workflows are not ordinary wiki notes. The current workflow lives in `_skills/memory-wiki/SKILL.md` and is synchronized with the installed Codex skill directory.
 
 ## Note Format
 
