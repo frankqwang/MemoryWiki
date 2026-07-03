@@ -1,78 +1,91 @@
 # MemoryWiki
 
-This directory is a portable, Obsidian-compatible Memory Wiki for durable AI conversation notes, task summaries, decisions, concepts, paper notes, skills, and reusable project context.
+[English](README.en.md)
 
-It is intentionally stored under `Documents` instead of a single tool's private config directory so Codex, other AI assistants, Obsidian, editors, and git can all work with the same notes.
+MemoryWiki 是一个可移植、兼容 Obsidian 的个人记忆 wiki，用来保存 AI 对话笔记、任务总结、决策、概念、论文笔记、技能和可复用的项目上下文。
 
-## How To Use
+它放在 `Documents` 下，而不是某个工具的私有配置目录里，这样 Codex、其他 AI 助手、Obsidian、编辑器和 Git 都能读写同一套资料。
 
-Open this folder as an Obsidian vault:
+## 使用方式
+
+把这个文件夹作为 Obsidian vault 打开：
 
 ```text
 C:\Users\Administrator\Documents\MemoryWiki
 ```
 
-Start from:
+入口：
 
 - [[00_Index]]
 
-## Note Types
+## 笔记类型
 
-`history-summary` is the raw intake layer: one conversation or task summarized into a durable note. Over time, repeated or important material should be distilled into `concept`, `decision`, `paper`, `project`, and `skill` notes.
+`history-summary` 是原始摄取层：把一次对话或一次任务总结成稳定笔记。随着内容积累，重复或重要的信息应该进一步沉淀成更长期的笔记类型：
 
-## Note Format
+- `concept`：概念、方法、术语
+- `decision`：决策和理由
+- `paper`：论文或文章笔记
+- `project`：项目上下文
+- `skill`：可复用的 AI 工作流
 
-Use plain Markdown with YAML frontmatter and Obsidian wikilinks.
+## 笔记格式
 
-Recommended frontmatter:
+使用普通 Markdown、YAML frontmatter 和 Obsidian `[[WikiLinks]]`。
+
+推荐 frontmatter：
 
 ```markdown
 ---
-title: Human-readable title
+title: 可读标题
 created: YYYY-MM-DD
 type: history-summary
 tags:
   - codex/history
   - topic/example
 aliases:
-  - Optional alternate title
+  - 可选别名
 related:
   - "[[00_Index]]"
 ---
 ```
 
-Recommended sections:
+推荐章节：
 
-- User goal or original request
-- What was done
-- Key findings, decisions, and rationale
-- Files, commands, URLs, or artifacts created
-- Related notes with `[[WikiLinks]]`
-- Open questions or follow-ups
+- 用户目标或原始请求
+- 做了什么
+- 关键发现、决策和理由
+- 创建或使用过的文件、命令、URL、产物
+- 相关笔记，使用 `[[WikiLinks]]`
+- 未解决问题或后续事项
 
-## Linking Rules
+## 链接规则
 
-- Link related notes and topics with `[[WikiLinks]]`.
-- Update [[00_Index]] when adding important notes.
-- It is acceptable to create dangling topic links; they can become concept notes later.
-- Keep filenames stable and ASCII-friendly. Put human-readable names in frontmatter `title` and `aliases`.
+- 用 `[[WikiLinks]]` 连接相关笔记和主题。
+- 新增重要笔记时更新 [[00_Index]] 和相关 MOC。
+- 可以创建暂时不存在的主题链接；之后可以补成概念页。
+- 文件名尽量稳定、ASCII 友好；可读标题放在 frontmatter 的 `title` 和 `aliases` 里。
 
-## Skill For AI Assistants
+## 给 AI 助手的规则
 
-The reusable Codex skill is included here:
+可复用的 Codex skill 放在：
 
 ```text
 _skills\save-history-summary\SKILL.md
 ```
 
-If another AI assistant opens this folder, it should read that file before creating or updating history notes. The installed Codex copy currently lives at:
+其他 AI 助手打开这个目录时，应先阅读：
+
+- [AGENTS.md](AGENTS.md)
+- [_skills/save-history-summary/SKILL.md](_skills/save-history-summary/SKILL.md)
+
+已安装的 Codex skill 位于：
 
 ```text
 C:\Users\Administrator\.codex\skills\save-history-summary\SKILL.md
 ```
 
-Both copies should be kept in sync when the note-taking workflow changes.
+如果记忆维护流程发生变化，需要同步更新 vault 内副本和已安装副本。
 
 ## Git
 
-This vault is intended to be versioned with git. Commit meaningful batches of note changes so the knowledge base has a useful history.
+这个 vault 用 Git 做版本管理。建议按有意义的批次提交笔记变化，让个人记忆库本身也有清晰历史。
