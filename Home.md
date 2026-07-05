@@ -21,8 +21,11 @@ related: []
 
 ## Memory
 
+- [[Memory/Summaries/conversation_notes_pytorch_nn_basics_2026-07-05|PyTorch nn.Module 基础概念学习会话]]
 - [[Memory/Summaries/memorywiki_maintenance_update_2026-07-03|MemoryWiki 维护流程更新]]
 - [[Memory/Summaries/conversation_notes_2601_07372|arXiv 2601.07372 与 nanochat 启发]]
+- [[Memory/Summaries/conversation_notes_nanochat_basics_2026-07-05|nanochat 代码基础学习会话]]
+- [[Memory/Summaries/transcript_nanochat_basics_2026-07-05|nanochat 代码基础学习会话 — 原文逐字记录]]
 
 ## Notes
 
@@ -36,6 +39,10 @@ related: []
 - [[Wiki/Concepts/Engram|Engram]]
 - [[Wiki/Concepts/MoE|MoE]]
 - [[Wiki/Concepts/Memory Wiki|Memory Wiki]]
+- [[Wiki/Concepts/Torch Compile|torch.compile]]
+- [[Wiki/Concepts/Meta Device|Meta Device]]
+- [[Wiki/Concepts/ReLU Squared|ReLU²]]
+- [[Wiki/Concepts/Bias in Neural Networks|Bias in Neural Networks]]
 
 ### Projects
 
