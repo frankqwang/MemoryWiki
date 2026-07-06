@@ -30,6 +30,7 @@ related: []
 ## Notes
 
 - [[Notes/README|手动笔记说明]]
+- [[Notes/ai_memory_wiki_product|AI 记忆 Wiki 产品构思]]
 
 ## Wiki
 
