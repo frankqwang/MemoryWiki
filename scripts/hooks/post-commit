@@ -1,0 +1,28 @@
+#!/bin/bash
+# post-commit hook - Auto-sync skill copies after skill changes.
+#
+# Install:
+#   cp scripts/hooks/post-commit .git/hooks/post-commit
+#   chmod +x .git/hooks/post-commit
+#
+# This hook runs after each commit. If the commit touched files under
+# _skills/memory-wiki/, it auto-runs the sync script to update installed
+# agent skill copies.
+
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "$0")/../.." && pwd)"
+SYNC_SCRIPT="$SCRIPT_DIR/_skills/memory-wiki/sync.sh"
+
+if [[ ! -f "$SYNC_SCRIPT" ]]; then
+  echo "[post-commit] Sync script not found: $SYNC_SCRIPT"
+  exit 0
+fi
+
+# Check if the latest commit touched skill files.
+if git diff --name-only HEAD~1 HEAD | grep -q "^_skills/memory-wiki/"; then
+  echo "[post-commit] Skill files changed, syncing agent copies..."
+  bash "$SYNC_SCRIPT"
+else
+  echo "[post-commit] No skill changes, skipping sync."
+fi
