@@ -12,7 +12,7 @@ related: []
 
 # MemoryWiki 首页
 
-这是一个给人和 AI 共同维护的长期记忆 wiki。`Memory/` 保存原始摘要和任务记录，`Notes/` 保存手动笔记，`Wiki/` 保存加工后的概念、项目和决策。
+这是一个给人和 AI 共同维护的长期记忆 wiki。`Memory/` 保存原始摘要和任务记录，`Notes/` 保存手动笔记，`Wiki/` 保存加工后的概念和项目。
 
 ## 从这里开始
 
@@ -52,10 +52,6 @@ related: []
 ### Maintenance
 
 - [_skills/memory-wiki/SKILL.md](_skills/memory-wiki/SKILL.md)
-
-### Decisions
-
-- [[Wiki/Decisions/MemoryWiki Structure|MemoryWiki 结构决策]]
 
 ## 约定
 

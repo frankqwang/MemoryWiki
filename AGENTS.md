@@ -41,7 +41,6 @@ Current placement:
 - `Notes/` for `note` files written or explicitly requested by the user.
 - `Wiki/Concepts/` for `concept`, `paper`, and durable topic notes.
 - `Wiki/Projects/` for `project` notes.
-- `Wiki/Decisions/` for `decision` notes.
 - `_skills/` for AI maintenance workflows, templates, and Codex skill copies. Do not use it as an ordinary note area.
 
 Root-level files should be limited to project documentation, home page, configuration, and AI maintenance instructions.
@@ -55,11 +54,10 @@ Use Chinese for ordinary note prose by default. Keep English technical terms in 
 - `history-summary`: a summary of one conversation or task.
 - `note`: a user-maintained manual note.
 - `concept`: a reusable topic or idea.
-- `decision`: a durable decision and rationale.
 - `paper`: notes about a paper or article.
 - `project`: reusable context about a project.
 
-`history-summary` notes are the intake layer, not the whole vault. `note` files are the user's manual writing area; preserve the user's wording unless asked to rewrite. When a pattern repeats or becomes durable, create or update a `concept`, `decision`, `paper`, or `project` note and link the raw summary or manual note to it.
+`history-summary` notes are the intake layer, not the whole vault. `note` files are the user's manual writing area; preserve the user's wording unless asked to rewrite. When a pattern repeats or becomes durable, create or update a `concept`, `paper`, or `project` note and link the raw summary or manual note to it.
 
 ## Linking
 

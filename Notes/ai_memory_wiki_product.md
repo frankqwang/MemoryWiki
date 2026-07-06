@@ -61,7 +61,6 @@ Notes/           # 用户手动笔记、草稿
     ↓  AI 提炼 + 人工 review
 Wiki/Concepts/   # 概念、方法、术语
 Wiki/Projects/   # 项目上下文
-Wiki/Decisions/  # 重要决策与理由
 ```
 
 ### 3. 自动链接与索引

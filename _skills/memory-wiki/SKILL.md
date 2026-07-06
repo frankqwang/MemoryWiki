@@ -1,6 +1,6 @@
 ---
 name: memory-wiki
-description: 维护用户级 Documents `MemoryWiki`，作为兼容 Obsidian 的 Markdown 记忆 wiki，用于跨会话 AI 知识。用户要求总结聊天、保存对话或任务历史、更新个人记忆、维护知识库笔记、创建互相链接的笔记、更新反向链接或 wikilinks、保留经验教训、决策、项目上下文、论文笔记、未来会话笔记；用户用中文要求对话笔记或历史笔记；提到 MemoryWiki 或 HistorySummary；或要求不要把笔记放进当前仓库时，使用此 skill。
+description: 维护用户级 Documents `MemoryWiki`，作为兼容 Obsidian 的 Markdown 记忆 wiki，用于跨会话 AI 知识。用户要求总结聊天、保存对话或任务历史、更新个人记忆、维护知识库笔记、创建互相链接的笔记、更新反向链接或 wikilinks、保留经验教训、项目上下文、论文笔记、未来会话笔记；用户用中文要求对话笔记或历史笔记；提到 MemoryWiki 或 HistorySummary；或要求不要把笔记放进当前仓库时，使用此 skill。
 ---
 
 # MemoryWiki
@@ -9,7 +9,7 @@ description: 维护用户级 Documents `MemoryWiki`，作为兼容 Obsidian 的 
 
 ## 概览
 
-从对话、已完成工作、决策、概念、论文和项目上下文中创建并维护持久的、兼容 Obsidian 的 Markdown 笔记。笔记保存在用户的 Documents 文件夹下，以便跨仓库、跨 Codex 会话和其他 AI 工具复用。
+从对话、已完成工作、概念、论文和项目上下文中创建并维护持久的、兼容 Obsidian 的 Markdown 笔记。笔记保存在用户的 Documents 文件夹下，以便跨仓库、跨 Codex 会话和其他 AI 工具复用。
 
 ## 目标位置
 
@@ -33,7 +33,6 @@ description: 维护用户级 Documents `MemoryWiki`，作为兼容 Obsidian 的 
 - `Notes/` 用于用户手写或明确要求作为个人笔记保存的内容。除非用户要求改写，否则保留用户原话。
 - `Wiki/Concepts/` 用于概念、论文和持久主题笔记。
 - `Wiki/Projects/` 用于项目笔记。
-- `Wiki/Decisions/` 用于决策笔记。
 - `_skills/` 只用于 AI 维护工作流、模板和 Codex skill 副本；不要把它当成普通笔记区。
 - 文件名使用稳定的 ASCII；可读标题和别名放在 frontmatter 的 `title` 和 `aliases` 中。
 - 使用 Obsidian wikilinks 连接相关主题和笔记，例如 `[[Wiki/Projects/nanochat]]`、`[[Wiki/Concepts/Engram]]`、`[[Memory/Summaries/conversation_notes_2601_07372|Engram paper notes]]`。
@@ -77,7 +76,7 @@ related:
    - 标题。
    - 用户目标或原始请求。
    - 已完成的事情。
-   - 关键发现、决策和理由。
+   - 关键发现、结论和理由。
    - 创建的文件、命令、URL 或产物。
    - 一个包含现有笔记和主题链接的 `Related` 小节。
    - 未解决问题或后续事项，如有。
