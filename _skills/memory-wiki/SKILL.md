@@ -1,5 +1,7 @@
 ---
 name: memory-wiki
+version: 1.1.0
+last_updated: 2026-07-06
 description: 维护用户级 Documents `MemoryWiki`，作为兼容 Obsidian 的 Markdown 记忆 wiki，用于跨会话 AI 知识。用户要求总结聊天、保存对话或任务历史、更新个人记忆、维护知识库笔记、创建互相链接的笔记、更新反向链接或 wikilinks、保留经验教训、项目上下文、论文笔记、未来会话笔记；用户用中文要求对话笔记或历史笔记；提到 MemoryWiki 或 HistorySummary；或要求不要把笔记放进当前仓库时，使用此 skill。
 ---
 

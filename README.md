@@ -129,6 +129,29 @@ C:\Users\Administrator\.codex\skills\memory-wiki\SKILL.md
 
 如果记忆维护流程发生变化，需要同步更新 vault 内副本和已安装副本。
 
+### 同步 skill 副本
+
+vault 内的 `_skills/memory-wiki/` 是 canonical 版本。修改后，运行同步脚本把更新推到已安装的 agent 目录：
+
+```bash
+bash _skills/memory-wiki/sync.sh
+```
+
+默认会同步到：
+
+- `~/.codex/skills/memory-wiki/`（Codex）
+- `~/temp/kimi-code/.agents/skills/memory-wiki/`（kimi-code）
+
+如果需要同步到其他位置，可以传参数：
+
+```bash
+bash _skills/memory-wiki/sync.sh /path/to/another/skill/copy
+```
+
+### skill 版本
+
+`SKILL.md` frontmatter 中维护 `version` 和 `last_updated`，方便检查各 agent 的 skill 是否过期。
+
 ## Git
 
 这个 vault 用 Git 做版本管理。建议按有意义的批次提交笔记变化，让个人记忆库本身也有清晰历史。
