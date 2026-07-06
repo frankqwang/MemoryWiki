@@ -93,7 +93,7 @@ bash _skills/memory-wiki/sync.sh
 Or install the post-commit hook so skill changes are auto-synced after each commit:
 
 ```bash
-cp scripts/hooks/post-commit .git/hooks/post-commit
+cp _skills/memory-wiki/hooks/post-commit .git/hooks/post-commit
 chmod +x .git/hooks/post-commit
 ```
 

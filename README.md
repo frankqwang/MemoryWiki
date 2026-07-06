@@ -153,7 +153,7 @@ bash _skills/memory-wiki/sync.sh /path/to/another/skill/copy
 安装 post-commit hook 后，每次提交如果改动了 `_skills/memory-wiki/` 下的文件，会自动运行 `sync.sh`：
 
 ```bash
-cp scripts/hooks/post-commit .git/hooks/post-commit
+cp _skills/memory-wiki/hooks/post-commit .git/hooks/post-commit
 chmod +x .git/hooks/post-commit
 ```
 
@@ -167,7 +167,7 @@ git commit -m "update skill"
 # 提交后会自动打印 sync 日志
 ```
 
-> 注意：`.git/hooks/` 不会被 Git 跟踪，新 clone 的仓库需要重新安装。版本化的 hook 示例保存在 `scripts/hooks/post-commit`。
+> 注意：`.git/hooks/` 不会被 Git 跟踪，新 clone 的仓库需要重新安装。版本化的 hook 示例保存在 `_skills/memory-wiki/hooks/post-commit`。
 
 ### skill 版本
 
