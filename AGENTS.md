@@ -79,3 +79,24 @@ _skills\memory-wiki\SKILL.md
 ```
 
 Keep it synchronized with the installed Codex copy when changing the workflow.
+
+### Syncing Skill Copies
+
+The vault copy of the skill at `_skills/memory-wiki/` is the canonical version. When you modify `SKILL.md` or the templates, sync the changes to installed agent directories.
+
+Run the sync script manually:
+
+```bash
+bash _skills/memory-wiki/sync.sh
+```
+
+Or install the post-commit hook so skill changes are auto-synced after each commit:
+
+```bash
+cp scripts/hooks/post-commit .git/hooks/post-commit
+chmod +x .git/hooks/post-commit
+```
+
+The hook checks whether the latest commit touched `_skills/memory-wiki/` and, if so, runs `sync.sh` to update the Codex and kimi-code copies.
+
+> Note: `.git/hooks/` is not tracked by Git. Each fresh clone must reinstall the hook from `scripts/hooks/post-commit`.
